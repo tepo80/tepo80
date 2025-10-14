@@ -10,21 +10,21 @@ import urllib.request
 from typing import List, Dict
 
 # ===================== تنظیمات =====================
-NORMAL_JSON = "normal4.json"
-FINAL_JSON = "final4.json"
+NORMAL_JSON = "normal.json"
+FINAL_JSON = "final.json"
 
 LINKS_JSON = [
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/tepo.json",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/freg.json",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/tepo60.json",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/tepo70.json",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/tepo80.json",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/tepo90.json",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/tepo10.json",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/freg10.json",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/freg20.json",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/tepo40.json",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/tepo50.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/tepo50.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/tepo10.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/tepo20.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/tepo60.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/tepo70.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/tepo80.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/tepo90.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/tepo30.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/tepo40.json" 
+
+
 ]
 
 # ===================== توابع =====================
@@ -105,8 +105,9 @@ def save_json_files(normal_list: List[Dict], final_list: List[Dict]):
     with open(FINAL_JSON, "w", encoding="utf-8") as f:
         json.dump(final_list, f, ensure_ascii=False, indent=4)
 
-    print(f"[ℹ️] Normal4 configs: {len(normal_list)} saved to {NORMAL_JSON}")
-    print(f"[ℹ️] Final4 configs (after TCP test): {len(final_list)} saved to {FINAL_JSON}")
+    print(f"[ℹ️] Normal
+    configs: {len(normal_list)} saved to {NORMAL_JSON}")
+    print(f"[ℹ️] Final configs (after TCP test): {len(final_list)} saved to {FINAL_JSON}")
 
 def update_subs():
     """اصلی: دریافت، پردازش و ذخیره کانفیگ‌ها"""
