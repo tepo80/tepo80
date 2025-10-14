@@ -29,12 +29,12 @@ jobs:
 
       # مرحله 5: commit و push فایل‌های خروجی اختصاصی cl4
       - run: |
-          if [[ -s normal4.json || -s final4.json ]]; then
+          if [[ -s normal.json || -s final.json ]]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add normal4.json final4.json
+            git add normal.json final.json
             git commit -m "auto update from cl4.py [skip ci]" || echo "No changes"
             git push || echo "skip push"
           else
-            echo "⚠️ normal4.json یا final4.json خالی یا موجود نیست، commit نشد"
+            echo "⚠️ normal.json یا final.json خالی یا موجود نیست، commit نشد"
           fi
