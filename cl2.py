@@ -16,14 +16,14 @@ TEXT_PATH = "normal2.txt"
 FIN_PATH = "final2.txt"
 
 LINK_PATH = [
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/ss.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/vless.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/tepo10.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/tepo20.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/tepo30.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/tepo40.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/tepo50.txt",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/trojan.txt"
+        "https://raw.githubusercontent.com/tepo80/tepo80/main/ss.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vless.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/tepo60.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/tepo70.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/tepo80.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/tepo90.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/h2.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/trojan.txt"
 ]
 
 FILE_HEADER_TEXT = "//profile-title: base64:2YfZhduM2LTZhyDZgdi52KfZhCDwn5iO8J+YjvCfmI4gaGFtZWRwNzE="
