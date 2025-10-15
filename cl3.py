@@ -8,24 +8,26 @@ import socket
 from typing import List
 
 # ===================== تنظیمات =====================
-TEXT_PATH = "normal3.txt"
-FIN_PATH = "final3.txt"
+TEXT_PATH = "normal2.txt"
+FIN_PATH = "final2.txt"
 
 LINK_PATH = [
-    
-    "https://github.com/Aristaproject/AristaSub/raw/refs/heads/main/Arista1.txt",
-    "https://github.com/Aristaproject/AristaSub/raw/refs/heads/main/Arista2.txt",
-    "https://github.com/Aristaproject/AristaSub/raw/refs/heads/main/Arista3.txt",
-    "https://github.com/Aristaproject/AristaSub/raw/refs/heads/main/Arista4.txt",
-    "https://github.com/Aristaproject/AristaSub/raw/refs/heads/main/Arista5.txt",
-    "https://github.com/Aristaproject/AristaSub/raw/refs/heads/main/Arista6.txt",
-    "https://github.com/Aristaproject/AristaSub/raw/refs/heads/main/Arista8.txt",
-    "https://github.com/Aristaproject/AristaSub/raw/refs/heads/main/Arista9.txt",
-    # ----- Extra sources -----
-    "https://zaya.link/Arista_HP_Final",
-    "https://raw.githubusercontent.com/yebekhe/vpn-fail/main/sub-link.txt",
-    "https://raw.githubusercontent.com/Surfboardv2ray/Proxy-sorter/main/ws_tls/proxies/wstls"
-            
+    # فایل‌های اصلی
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/ss.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vless.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/h2.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/trojan.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vmess.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip10.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip20.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip30.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip40.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip50.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip60.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip70.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip80.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip90.txt"
 ]
 
 FILE_HEADER_TEXT = "//profile-title: base64:2YfZhduM2LTZhyDZgdi52KfZhCDwn5iO8J+YjvCfmI4gaGFtZWRwNzE="
@@ -120,8 +122,8 @@ def save_outputs(lines: List[str]):
         print(f"[ℹ️] Stage 1: {saved_normal} configs saved to {TEXT_PATH}")
         print(f"[ℹ️] Stage 2: {saved_final} configs saved to {FIN_PATH}")
         print(f"[✅] Update complete.")
-        print(f"  -> Normal3 configs (saved): {saved_normal}")
-        print(f"  -> Final3 configs (after TCP test, saved): {saved_final}")
+        print(f"  -> Normal2 configs (saved): {saved_normal}")
+        print(f"  -> Final2 configs (after TCP test, saved): {saved_final}")
         print(f"  -> Total sources processed (final): {saved_final}")
 
     except Exception as e:
