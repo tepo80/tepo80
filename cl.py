@@ -16,6 +16,11 @@ TEXT_PATH = "normal.txt"
 FIN_PATH = "final.txt"
 
 LINK_PATH = [
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vmess.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vless.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/trojan.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/ss.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/h2.txt",
     "https://raw.githubusercontent.com/tepo80/tepo80/main/vip.txt",
     "https://raw.githubusercontent.com/tepo80/tepo80/main/vip10.txt",
     "https://raw.githubusercontent.com/tepo80/tepo80/main/vip20.txt",
