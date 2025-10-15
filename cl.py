@@ -16,14 +16,16 @@ TEXT_PATH = "normal.txt"
 FIN_PATH = "final.txt"
 
 LINK_PATH = [
-    "https://raw.githubusercontent.com/tepo80/tepo80/main/ss.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo80/main/vless.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo80/main/tepo60.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo80/main/tepo70.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo80/main/tepo80.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo80/main/tepo90.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo80/main/h2.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo80/main/trojan.txt"
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip10.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip20.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip30.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip40.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip50.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip60.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip70.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip80.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip90.txt"
 ]
 
 FILE_HEADER_TEXT = "//profile-title: base64:2YfZhduM2LTZhyDZgdi52KfZhCDwn5iO8J+YjvCfmI4gaGFtZWRwNzE="
