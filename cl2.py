@@ -14,22 +14,17 @@ NORMAL_JSON = "normal.json"
 FINAL_JSON = "final.json"
 
 LINK_PATH = [
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip10.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip20.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip30.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip40.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip50.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip60.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip70.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip80.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vip90.json",
-    # منابع اضافی
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/h2.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vless.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/vmess.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/trojan.json",
-    "https://raw.githubusercontent.com/tepo80/tepo18/main/ss.json"
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip10.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip20.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip30.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip40.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip50.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip60.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip70.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip80.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip90.json"
+    
 ]
 
 # ===================== توابع =====================
