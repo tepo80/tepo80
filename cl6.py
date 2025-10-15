@@ -13,19 +13,17 @@ from typing import List, Dict
 NORMAL_JSON = "normal6.json"
 FINAL_JSON = "final6.json"
 
-LINKS_JSON = [
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/freg.json",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/tepo60.json",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/tepo70.json",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/tepo80.json",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/tepo90.json",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/freg10.json",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/freg20.json",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/tepo40.json",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/tepo50.json",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/tepo10.json",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/tepo20.json",
-    "https://raw.githubusercontent.com/tepo18/sab-vip10/main/tepo30.json",
+LINK_PATH = [
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip10.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip20.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip30.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip40.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip50.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip60.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip70.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip80.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip90.json"
 ]
 
 # ===================== توابع =====================
