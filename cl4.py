@@ -10,8 +10,8 @@ import urllib.request
 from typing import List, Dict
 
 # ===================== تنظیمات =====================
-NORMAL_JSON = "normal.json"
-FINAL_JSON = "final.json"
+NORMAL_JSON = "normal2.json"
+FINAL_JSON = "final2.json"
 
 LINK_PATH = [
     "https://raw.githubusercontent.com/tepo80/tepo80/main/vip.json",
@@ -104,9 +104,9 @@ def save_json_files(normal_list: List[Dict], final_list: List[Dict]):
     with open(FINAL_JSON, "w", encoding="utf-8") as f:
         json.dump(final_list, f, ensure_ascii=False, indent=4)
 
-    print(f"[ℹ️] Normal
+    print(f"[ℹ️] Normal2
     configs: {len(normal_list)} saved to {NORMAL_JSON}")
-    print(f"[ℹ️] Final configs (after TCP test): {len(final_list)} saved to {FINAL_JSON}")
+    print(f"[ℹ️] Final2 configs (after TCP test): {len(final_list)} saved to {FINAL_JSON}")
 
 def update_subs():
     """اصلی: دریافت، پردازش و ذخیره کانفیگ‌ها"""
