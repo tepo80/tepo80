@@ -15,7 +15,7 @@ from typing import List
 TEXT_PATH = "normal2.txt"
 FIN_PATH = "final2.txt"
 
-LINK_PATH = [
+LINKS_PATH = [
    
     "https://raw.githubusercontent.com/tepo80/tepo80/main/ss.txt",
     "https://raw.githubusercontent.com/tepo80/tepo80/main/vless.txt",
@@ -144,7 +144,7 @@ def save_outputs(lines: List[str]):
 def update_subs():
     all_lines = []
 
-    for url in LINK_PATH:
+    for url in LINKS_PATH:
         fetched = fetch_link(url)
         if not fetched:
             print(f"[⚠️] Cannot fetch or empty source: {url}")
