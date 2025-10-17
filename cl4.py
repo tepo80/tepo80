@@ -131,7 +131,7 @@ def save_files(normal_lines, final_lines):
 def update_all():
     print("[*] Fetching sources...")
     all_lines = []
-    for link in LINKS_RAW:
+    for link in LINKS_PATH:
         all_lines.extend(fetch_lines(link))
     print(f"[*] Total lines fetched: {len(all_lines)}")
 
