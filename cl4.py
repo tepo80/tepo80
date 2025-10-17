@@ -1,19 +1,22 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import os
-import json
-import threading
 import time
-import socket
+import json
+import base64
 import urllib.request
-from typing import List, Dict
+import subprocess
+import platform
+import threading
+import re
 
-# ===================== تنظیمات =====================
-NORMAL_JSON = "normal2.json"
-FINAL_JSON = "final2.json"
+# ---------------- مسیر فایل‌ها ----------------
+TEXT_NORMAL = "normal2.txt"
+TEXT_FINAL = "final2.txt"
 
-LINK_PATH = [
+# ---------------- منابع ----------------
+LINKS_PATH = [
+    
     "https://raw.githubusercontent.com/tepo80/tepo80/main/vip.json",
     "https://raw.githubusercontent.com/tepo80/tepo80/main/vip10.json",
     "https://raw.githubusercontent.com/tepo80/tepo80/main/vip20.json",
@@ -24,111 +27,127 @@ LINK_PATH = [
     "https://raw.githubusercontent.com/tepo80/tepo80/main/vip70.json",
     "https://raw.githubusercontent.com/tepo80/tepo80/main/vip80.json",
     "https://raw.githubusercontent.com/tepo80/tepo80/main/vip90.json"
+    
 ]
 
-# ===================== توابع =====================
+MAX_THREADS = 20
+MAX_PING_MS = 1200
 
-def fetch_json(url: str) -> List[Dict]:
-    """دریافت JSON از URL"""
+# ---------------- دریافت خطوط از لینک ----------------
+def fetch_lines(url):
     try:
-        with urllib.request.urlopen(url, timeout=15) as resp:
-            data = json.loads(resp.read().decode())
-        return data if isinstance(data, list) else []
+        with urllib.request.urlopen(url, timeout=20) as resp:
+            lines = resp.read().decode(errors="ignore").splitlines()
+            return [line.strip() for line in lines if line.strip()]
     except Exception as e:
-        print(f"[⚠️] Cannot fetch {url}: {e}")
+        print(f"[ERROR] Cannot fetch {url}: {e}")
         return []
 
-def validate_config(cfg: Dict) -> bool:
-    """اعتبارسنجی کانفیگ"""
-    return bool(cfg and "remarks" in cfg and "outbounds" in cfg)
+# ---------------- حذف خطوط تکراری ----------------
+def unique_lines(lines):
+    seen = set()
+    result = []
+    for line in lines:
+        if line not in seen:
+            result.append(line)
+            seen.add(line)
+    return result
 
-def tcp_test(address: str, port: int, timeout=3) -> bool:
-    """تست اتصال TCP"""
+# ---------------- پینگ ----------------
+def ping(host, count=1, timeout=1):
+    param_count = "-n" if platform.system().lower() == "windows" else "-c"
+    param_timeout = "-w" if platform.system().lower() == "windows" else "-W"
     try:
-        with socket.create_connection((address, port), timeout=timeout):
-            return True
+        cmd = ["ping", param_count, str(count), param_timeout, str(timeout), host]
+        result = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        output = result.stdout
+        match = re.search(r'time[=<]\s*(\d+\.?\d*)', output)
+        if match:
+            return float(match.group(1))
     except:
-        return False
+        pass
+    return float('inf')
 
-def process_configs(configs: List[Dict], precise_test=False, max_threads=20) -> List[Dict]:
-    """پردازش کانفیگ‌ها و حذف تکراری‌ها"""
+# ---------------- استخراج هاست و پورت از کانفیگ ----------------
+def extract_address(config_line):
+    try:
+        if config_line.startswith("vmess://"):
+            encoded = config_line.split("://", 1)[1].split("#")[0]
+            missing_padding = len(encoded) % 4
+            if missing_padding:
+                encoded += "=" * (4 - missing_padding)
+            data = json.loads(base64.b64decode(encoded).decode('utf-8', errors="ignore"))
+            host = data.get("add") or data.get("address")
+            port = int(data.get("port", 443))
+            return host, port
+
+        elif config_line.startswith("vless://") or config_line.startswith("trojan://"):
+            match = re.match(r'^[^:]+://[^@]+@([^:]+):(\d+)', config_line)
+            if match:
+                return match.group(1), int(match.group(2))
+
+        elif config_line.startswith("hy2://") or config_line.startswith("hysteria2://"):
+            match = re.match(r'^[^:]+://([^:]+):(\d+)', config_line)
+            if match:
+                return match.group(1), int(match.group(2))
+    except:
+        pass
+    return None, None
+
+# ---------------- پردازش پینگ ----------------
+def process_ping(configs):
     results = []
     lock = threading.Lock()
     threads = []
 
-    def worker(cfg):
-        if "outbounds" in cfg:
-            try:
-                vnext = cfg["outbounds"][0]["settings"]["vnext"][0]
-                host = vnext.get("address")
-                port = vnext.get("port", 443)
-                if precise_test and host:
-                    if tcp_test(host, port):
-                        with lock:
-                            results.append(cfg)
-                else:
-                    with lock:
-                        results.append(cfg)
-            except:
-                pass
+    def worker(cfg_line):
+        host, port = extract_address(cfg_line)
+        if host:
+            ping_time = ping(host)
+            if ping_time < MAX_PING_MS:
+                with lock:
+                    results.append((cfg_line, ping_time))
 
-    for cfg in configs:
-        t = threading.Thread(target=worker, args=(cfg,))
+    for line in configs:
+        t = threading.Thread(target=worker, args=(line,))
         threads.append(t)
         t.start()
-        if len(threads) >= max_threads:
-            for th in threads:
-                th.join()
+        if len(threads) >= MAX_THREADS:
+            for th in threads: th.join()
             threads = []
 
-    for t in threads:
-        t.join()
+    for t in threads: t.join()
+    results.sort(key=lambda x: x[1])
+    return [cfg for cfg, _ in results]
 
-    # حذف تکراری بر اساس remarks
-    unique = {}
-    for cfg in results:
-        key = cfg.get("remarks")
-        if key not in unique:
-            unique[key] = cfg
+# ---------------- ذخیره فایل‌ها ----------------
+def save_files(normal_lines, final_lines):
+    with open(TEXT_NORMAL, "w", encoding="utf-8") as f:
+        f.write("\n".join(normal_lines))
+    with open(TEXT_FINAL, "w", encoding="utf-8") as f:
+        f.write("\n".join(final_lines))
 
-    final_list = list(unique.values())
-    return final_list
+# ---------------- اجرای اصلی ----------------
+def update_all():
+    print("[*] Fetching sources...")
+    all_lines = []
+    for link in LINKS_RAW:
+        all_lines.extend(fetch_lines(link))
+    print(f"[*] Total lines fetched: {len(all_lines)}")
 
-def save_json_files(normal_list: List[Dict], final_list: List[Dict]):
-    """ذخیره فایل‌های JSON"""
-    os.makedirs(os.path.dirname(os.path.abspath(NORMAL_JSON)), exist_ok=True)
+    all_lines = unique_lines(all_lines)
 
-    with open(NORMAL_JSON, "w", encoding="utf-8") as f:
-        json.dump(normal_list, f, ensure_ascii=False, indent=4)
+    print("[*] Stage 1: First ping check (basic filtering)...")
+    normal_lines = process_ping(all_lines)
+    print(f"[INFO] Saved {len(normal_lines)} configs to {TEXT_NORMAL}")
 
-    with open(FINAL_JSON, "w", encoding="utf-8") as f:
-        json.dump(final_list, f, ensure_ascii=False, indent=4)
+    print("[*] Stage 2: Detailed ping stability check...")
+    final_lines = process_ping(normal_lines)
+    print(f"[INFO] Saved {len(final_lines)} configs to {TEXT_FINAL}")
 
-    print(f"[ℹ️] Normal2
-    configs: {len(normal_list)} saved to {NORMAL_JSON}")
-    print(f"[ℹ️] Final2 configs (after TCP test): {len(final_list)} saved to {FINAL_JSON}")
+    save_files(normal_lines, final_lines)
+    print("[✅] Update complete.")
 
-def update_subs():
-    """اصلی: دریافت، پردازش و ذخیره کانفیگ‌ها"""
-    all_configs = []
-    for url in LINKS_JSON:
-        data = fetch_json(url)
-        for cfg in data:
-            if validate_config(cfg):
-                all_configs.append(cfg)
-
-    print(f"[*] Total configs fetched from sources: {len(all_configs)}")
-
-    # مرحله نرمال
-    normal_list = all_configs
-    # مرحله فینال با تست دقیق TCP
-    final_list = process_configs(normal_list, precise_test=True)
-
-    save_json_files(normal_list, final_list)
-
-# ===================== اجرای دستی =====================
 if __name__ == "__main__":
-    print("[*] Starting JSON subscription update...")
-    start_time = time.time()
-    update_subs()
-    print(f"[*] Done. Time elapsed: {time.time() - start_time:.2f}s")
+    print("[*] Starting advanced auto-updater for TXT sources (cl4)...")
+    update_all()
