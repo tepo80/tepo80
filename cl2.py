@@ -15,21 +15,16 @@ FINAL_JSON = "final.json"
 
 LINKS_PATH = [
 
-    "https://raw.githubusercontent.com/tepo80/tepo80/main/ss.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo80/main/vless.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo80/main/h2.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo80/main/trojan.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo80/main/vmess.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip10.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip20.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip30.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip40.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip50.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip60.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip70.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip80.txt",
-    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip90.txt"
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip10.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip20.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip30.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip40.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip50.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip60.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip70.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip80.json",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip90.json"
 
 ]
 
