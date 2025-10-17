@@ -1,0 +1,131 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+import os
+import json
+import threading
+import time
+import socket
+import urllib.request
+from typing import List, Dict
+
+# ===================== تنظیمات =====================
+NORMAL_JSON = "normal.json"
+FINAL_JSON = "final.json"
+
+LINKS_PATH = [
+
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/ss.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vless.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/h2.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/trojan.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vmess.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip10.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip20.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip30.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip40.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip50.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip60.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip70.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip80.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/vip90.txt"
+
+]
+
+MAX_THREADS = 20
+TCP_TIMEOUT = 3.0
+
+# ===================== توابع =====================
+def fetch_json(url: str) -> List[Dict]:
+    try:
+        with urllib.request.urlopen(url, timeout=15) as resp:
+            data = json.loads(resp.read().decode())
+        return data if isinstance(data, list) else []
+    except Exception as e:
+        print(f"[⚠️] Cannot fetch {url}: {e}")
+        return []
+
+def validate_config(cfg: Dict) -> bool:
+    return bool(cfg and "remarks" in cfg and "outbounds" in cfg)
+
+def tcp_test(address: str, port: int, timeout=TCP_TIMEOUT) -> bool:
+    try:
+        with socket.create_connection((address, port), timeout=timeout):
+            return True
+    except:
+        return False
+
+def process_configs(configs: List[Dict], precise_test=False) -> List[Dict]:
+    results = []
+    lock = threading.Lock()
+    threads = []
+
+    def worker(cfg):
+        if "outbounds" in cfg:
+            try:
+                vnext = cfg["outbounds"][0]["settings"]["vnext"][0]
+                host = vnext.get("address")
+                port = vnext.get("port", 443)
+                if precise_test and host:
+                    if tcp_test(host, port):
+                        with lock:
+                            results.append(cfg)
+                else:
+                    with lock:
+                        results.append(cfg)
+            except:
+                pass
+
+    for cfg in configs:
+        t = threading.Thread(target=worker, args=(cfg,))
+        threads.append(t)
+        t.start()
+        if len(threads) >= MAX_THREADS:
+            for th in threads:
+                th.join()
+            threads = []
+
+    for t in threads:
+        t.join()
+
+    # حذف تکراری با استفاده از remarks
+    unique = {}
+    for cfg in results:
+        key = cfg.get("remarks")
+        if key not in unique:
+            unique[key] = cfg
+
+    return list(unique.values())
+
+def save_json_files(normal_list: List[Dict], final_list: List[Dict]):
+    os.makedirs(os.path.dirname(os.path.abspath(NORMAL_JSON)), exist_ok=True)
+
+    with open(NORMAL_JSON, "w", encoding="utf-8") as f:
+        json.dump(normal_list, f, ensure_ascii=False, indent=4)
+    with open(FINAL_JSON, "w", encoding="utf-8") as f:
+        json.dump(final_list, f, ensure_ascii=False, indent=4)
+
+    print(f"[ℹ️] Normal configs: {len(normal_list)} saved to {NORMAL_JSON}")
+    print(f"[ℹ️] Final configs (after TCP test): {len(final_list)} saved to {FINAL_JSON}")
+    print(f"[✅] Update complete. Normal.json and Final.json are ready.")
+
+def update_subs():
+    all_configs = []
+    for url in LINKS_PATH:
+        data = fetch_json(url)
+        for cfg in data:
+            if validate_config(cfg):
+                all_configs.append(cfg)
+
+    print(f"[*] Total configs fetched from sources: {len(all_configs)}")
+    normal_list = all_configs
+    final_list = process_configs(normal_list, precise_test=True)
+    save_json_files(normal_list, final_list)
+
+# ========================== اجرا ==========================
+if __name__ == "__main__":
+    print("[*] Starting JSON subscription update...")
+    start_time = time.time()
+    update_subs()
+    print(f"[*] Done. Time elapsed: {time.time() - start_time:.2f}s")
