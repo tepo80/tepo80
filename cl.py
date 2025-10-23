@@ -15,7 +15,7 @@ TEXT_NORMAL = "normal.txt"
 TEXT_FINAL = "final.txt"
 
 LINKS_PATH = [
-  
+    "https://zaya.link/Arista_HP_Final"
     "https://raw.githubusercontent.com/tepo80/tepo80/main/vmess.txt",
     "https://raw.githubusercontent.com/tepo80/tepo80/main/vless.txt",
     "https://raw.githubusercontent.com/tepo80/tepo80/main/trojan.txt",
