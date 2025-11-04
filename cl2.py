@@ -16,8 +16,15 @@ TEXT_PATH = "normal2.txt"
 FIN_PATH = "final2.txt"
 
 LINKS_PATH = [
-   
-    "https://raw.githubusercontent.com/tepo80/tepo80/main/ss.txt",
+ "https://raw.githubusercontent.com/hamedp-71/Sub_Checker_Creator/refs/heads/main/final.txt"
+  "https://raw.githubusercontent.com/hamedp-71/Trojan/refs/heads/main/hp.txt" 
+  "https://zaya.link/Arista_HP_Final"
+  "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/main/Splitted-By-Protocol/ss.txt"
+  "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/main/Splitted-By-Protocol/vmess.txt"
+  "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/main/Splitted-By-Protocol/vless.txt"
+   "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/main/Splitted-By-Protocol/hy2.txt"
+   "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/main/Splitted-By-Protocol/trojan.txt"
+   "https://raw.githubusercontent.com/tepo80/tepo80/main/ss.txt",
     "https://raw.githubusercontent.com/tepo80/tepo80/main/vless.txt",
     "https://raw.githubusercontent.com/tepo80/tepo80/main/h2.txt",
     "https://raw.githubusercontent.com/tepo80/tepo80/main/trojan.txt",
