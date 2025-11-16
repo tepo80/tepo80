@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+ه#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 import time
@@ -15,8 +15,24 @@ TEXT_NORMAL = "normal.txt"
 TEXT_FINAL = "final.txt"
 
 LINKS_PATH = [
-    "https://almasi-9025.batool-sogeli.workers.dev/arista"
-    "https://zaya.link/Arista_HP_Final"
+
+    "https://23.ahsan-tepo20.workers.dev/public?ports=2096,2095,443,8080,8443,2053,2052&stealth=websocket&multipath=video,chat,download&compression=json&limit=all",
+    "https://23.ahsan-tepo20.workers.dev/public?ports=2096,2095,443,8080,8443,2053,2052&stealth=grpc&multipath=video,chat,download&compression=json&limit=all",
+    "https://23.ahsan-tepo20.workers.dev/public?ports=2096,2095,443,8080,8443,2053,2052&stealth=grpc&multipath=video,chat,download&compression=text,json&limit=all",
+    "https://23.ahsan-tepo20.workers.dev/public?ports=2096,2095,443,8080,8443,2053,2052&stealth=grpc&compression=text,json&limit=all",
+    "https://23.ahsan-tepo20.workers.dev/public?ports=2096,2095,443,8080,8443,2053,2052&stealth=grpc&compression=text&limit=all",
+    "https://23.ahsan-tepo20.workers.dev/public?ports=2096,2095,443,8080,8443,2053,2052&stealth=grpc&compression=auto&limit=all",
+    "https://23.ahsan-tepo20.workers.dev/public?ports=2096,2095,443,8080,8443,2053,2052&stealth=quic&compression=auto&limit=all",
+    "https://23.ahsan-tepo20.workers.dev/arista?limit=all,
+    "https://23.ahsan-tepo20.workers.dev/public?ports=2096,2095,443,8080,8443,2053,2052&stealth=websocket&multipath=video,chat,download&compression=json&limit=all",
+    "https://23.ahsan-tepo20.workers.dev/public?ports=2096,2095,443,8080,8443,2053,2052&stealth=grpc&multipath=video,chat,download&compression=json&limit=all",
+    "https://23.ahsan-tepo20.workers.dev/public?ports=2096,2095,443,8080,8443,2053,2052&stealth=grpc&multipath=video,chat,download&compression=text,json&limit=all",
+    "https://23.ahsan-tepo20.workers.dev/public?ports=2096,2095,443,8080,8443,2053,2052&stealth=grpc&compression=text,json&limit=all",
+    "https://23.ahsan-tepo20.workers.dev/public?ports=2096,2095,443,8080,8443,2053,2052&stealth=grpc&compression=text&limit=all",
+    "https://23.ahsan-tepo20.workers.dev/public?ports=2096,2095,443,8080,8443,2053,2052&stealth=grpc&compression=auto&limit=all",
+    "https://23.ahsan-tepo20.workers.dev/public?ports=2096,2095,443,8080,8443,2053,2052&stealth=quic&compression=auto&limit=all",
+    "https://almasi-9025.batool-sogeli.workers.dev/arista",
+    "https://zaya.link/Arista_HP_Final",
     "https://raw.githubusercontent.com/tepo80/tepo80/main/vmess.txt",
     "https://raw.githubusercontent.com/tepo80/tepo80/main/vless.txt",
     "https://raw.githubusercontent.com/tepo80/tepo80/main/trojan.txt",
