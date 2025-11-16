@@ -1,0 +1,1980 @@
+{
+  "proxies": [
+    {
+      "name": "ARISTA🌐 - Combined [157.180.123.25]",
+      "type": "vless",
+      "server": "157.180.123.25",
+      "port": 443,
+      "uuid": "638c1918-f6f0-4ecc-85e6-a3ac50ed9c02",
+      "tls": true,
+      "servername": "157.180.123.25",
+      "network": "ws",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "xudp": false,
+      "packet-addr": false,
+      "trojan": {
+        "password": "3ea503c7-2e03-424a-812d-6f0d803e73dc",
+        "flow": "",
+        "sni": "joss.gpj.web.id"
+      },
+      "ws-opts": {
+        "path": "/linkws?ed",
+        "headers": {
+          "Host": "157.180.123.25"
+        }
+      }
+    },
+    {
+      "name": "ARISTA🌐 - Combined [all.tellmethetrue.shop]",
+      "type": "vless",
+      "server": "all.tellmethetrue.shop",
+      "port": 443,
+      "uuid": "e4824193-4f54-453b-d037-88368e85ef0e",
+      "tls": true,
+      "servername": "pqh27v5.hiddendom.shop",
+      "network": "grpc",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "alpn": [
+        "h2"
+      ],
+      "xudp": false,
+      "packet-addr": false,
+      "trojan": {
+        "password": "3b38715b-f08a-46dd-9904-7531ca4bb6e8",
+        "flow": "",
+        "sni": "joss.gpj.web.id"
+      },
+      "grpc-opts": {
+        "grpc-service-name": "GunService"
+      }
+    },
+    {
+      "name": "ARISTA🌐 - Combined [91.99.177.36]",
+      "type": "vless",
+      "server": "91.99.177.36",
+      "port": 443,
+      "uuid": "77dacbb9-eb50-487e-adc7-f1f2cb4cb19c",
+      "tls": true,
+      "servername": "91.99.177.36",
+      "network": "ws",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "xudp": false,
+      "packet-addr": false,
+      "trojan": {
+        "password": "e812343b-61a1-46fd-b086-b1395d0eb7de",
+        "flow": "",
+        "sni": "joss.gpj.web.id"
+      },
+      "ws-opts": {
+        "path": "/linkws?ed=2560",
+        "headers": {
+          "Host": "91.99.177.36"
+        }
+      }
+    },
+    {
+      "name": "ARISTA🌐 - Combined [all.tellmethetrue.shop] (2)",
+      "type": "vless",
+      "server": "all.tellmethetrue.shop",
+      "port": 443,
+      "uuid": "e4824193-4f54-453b-d037-88368e85ef0e",
+      "tls": true,
+      "servername": "pqh27v5.hiddendom.shop",
+      "network": "grpc",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "alpn": [
+        "h2"
+      ],
+      "xudp": false,
+      "packet-addr": false,
+      "trojan": {
+        "password": "823f57d2-d271-48a6-859e-d041179e1c6b",
+        "flow": "",
+        "sni": "joss.gpj.web.id"
+      },
+      "grpc-opts": {
+        "grpc-service-name": "GunService"
+      }
+    },
+    {
+      "name": "ARISTA🌐 - Combined [104.26.6.89]",
+      "type": "vless",
+      "server": "104.26.6.89",
+      "port": 443,
+      "uuid": "5ec3a039-ea63-4bf9-a848-a65c9bfa66f5",
+      "tls": true,
+      "servername": "gb-8981.shenzogmbh.com",
+      "network": "ws",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "xudp": false,
+      "packet-addr": false,
+      "trojan": {
+        "password": "ff022848-4fb7-465a-9e6f-756d3dfc2c6a",
+        "flow": "",
+        "sni": "joss.gpj.web.id"
+      },
+      "ws-opts": {
+        "path": "/api/v1",
+        "headers": {
+          "Host": "gb-8981.shenzogmbh.com"
+        }
+      }
+    },
+    {
+      "name": "ARISTA🌐 - Combined [www.speedtest.net]",
+      "type": "vless",
+      "server": "www.speedtest.net",
+      "port": 443,
+      "uuid": "5ec3a039-ea63-4bf9-a848-a65c9bfa66f5",
+      "tls": true,
+      "servername": "gb-8981.shenzogmbh.com",
+      "network": "ws",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "xudp": false,
+      "packet-addr": false,
+      "trojan": {
+        "password": "2274c52572e721086f8bd8f88984643c",
+        "flow": "",
+        "sni": "www.nintendogames.net"
+      },
+      "ws-opts": {
+        "path": "/api/v1",
+        "headers": {
+          "Host": "gb-8981.shenzogmbh.com"
+        }
+      }
+    },
+    {
+      "name": "ARISTA🌐 - Combined [172.66.47.156]",
+      "type": "vless",
+      "server": "172.66.47.156",
+      "port": 443,
+      "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+      "tls": true,
+      "servername": "wwW.oPEnsIGnAL.cOM.naynay09.Dynv6.nET",
+      "network": "ws",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "xudp": false,
+      "packet-addr": false,
+      "trojan": {
+        "password": "trojan",
+        "flow": "",
+        "sni": "store.timimi.dpdns.org"
+      },
+      "ws-opts": {
+        "path": "/",
+        "headers": {
+          "Host": "wwW.oPEnsIGnAL.cOM.naynay09.Dynv6.nET"
+        }
+      }
+    },
+    {
+      "name": "ARISTA🌐 - Combined [104.21.86.253]",
+      "type": "vless",
+      "server": "104.21.86.253",
+      "port": 443,
+      "uuid": "e4824193-4f54-453b-d037-88368e85ef0e",
+      "tls": true,
+      "servername": "pqh27v1.carwashipdir.shop",
+      "network": "grpc",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "xudp": false,
+      "packet-addr": false,
+      "trojan": {
+        "password": "YwuvGJk36B",
+        "flow": "",
+        "sni": "kotlet.arshiacomplus.dpdns.org"
+      },
+      "grpc-opts": {
+        "grpc-service-name": "GunService"
+      }
+    },
+    {
+      "name": "ARISTA🌐 - Combined [all.tellmethetrue.shop] (3)",
+      "type": "vless",
+      "server": "all.tellmethetrue.shop",
+      "port": 443,
+      "uuid": "e4824193-4f54-453b-d037-88368e85ef0e",
+      "tls": true,
+      "servername": "pqh29v6.hiddendom.shop",
+      "network": "grpc",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "alpn": [
+        "h2"
+      ],
+      "xudp": false,
+      "packet-addr": false,
+      "trojan": {
+        "password": "ea39fa94f1ee00999337ea1fd3318e69",
+        "flow": "",
+        "sni": "www.nintendogames.net"
+      },
+      "grpc-opts": {
+        "grpc-service-name": "GunService"
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [8.39.125.194]",
+      "server": "8.39.125.194",
+      "port": 443,
+      "uuid": "f64bdc57-0f54-4705-bf75-cfd646d98c06",
+      "udp": true,
+      "tls": true,
+      "network": "ws",
+      "client-fingerprint": "random",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": false,
+      "servername": "snippets.nneko.netlib.re",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "ws-opts": {
+        "path": "/?ed=2048Join---PLANB_NET---Join---PLANB_NET---Join---PLANB_NET---Join---PLANB_NET",
+        "headers": {
+          "Host": "snippets.nneko.netlib.re"
+        }
+      },
+      "meta": {
+        "original_config": "vless://f64bdc57-0f54-4705-bf75-cfd646d98c06@8.39.125.194:443?path=%2F%3Fed%3D2048Join---PLANB_NET---Join---PLANB_NET---Join---PLANB_NET---Join---PLANB_NET&security=tls&encryption=none&host=snippets.nneko.netlib.re&fp=random&type=ws&sni=snippets.nneko.netlib.re#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": false
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [8.39.125.85]",
+      "server": "8.39.125.85",
+      "port": 443,
+      "uuid": "f64bdc57-0f54-4705-bf75-cfd646d98c06",
+      "udp": true,
+      "tls": true,
+      "network": "ws",
+      "client-fingerprint": "random",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": false,
+      "servername": "snippets.nneko.netlib.re",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "ws-opts": {
+        "path": "/?ed=2048J--_T",
+        "headers": {
+          "Host": "snippets.nneko.netlib.re"
+        }
+      },
+      "meta": {
+        "original_config": "vless://f64bdc57-0f54-4705-bf75-cfd646d98c06@8.39.125.85:443?path=%2F%3Fed%3D2048J--_T&security=tls&encryption=none&host=snippets.nneko.netlib.re&fp=random&type=ws&sni=snippets.nneko.netlib.re#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": false
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [all.tellmethetrue.shop] (4)",
+      "server": "all.tellmethetrue.shop",
+      "port": 443,
+      "uuid": "e4824193-4f54-453b-d037-88368e85ef0e",
+      "udp": true,
+      "tls": true,
+      "network": "grpc",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": false,
+      "servername": "pqh30v4.hiddendom.shop",
+      "alpn": [
+        "h2"
+      ],
+      "grpc-opts": {
+        "grpc-service-name": "GunService",
+        "grpc-mode": "gun"
+      },
+      "meta": {
+        "original_config": "vless://e4824193-4f54-453b-d037-88368e85ef0e@all.tellmethetrue.shop:443?mode=gun&security=tls&alpn=h2&encryption=none&type=grpc&sni=pqh30v4.hiddendom.shop#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": false
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [autos.jykvpn.com]",
+      "server": "autos.jykvpn.com",
+      "port": 443,
+      "uuid": "56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": false,
+      "servername": "cdnjs.com",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "reality": {
+        "public-key": "MNTWCLyV7EquFn-J0a6KRlQZ0dt6QY5mmu7Dq8uDkxw",
+        "short-id": "c2a0b2d60a7fc300"
+      },
+      "flow": "xtls-rprx-vision",
+      "meta": {
+        "original_config": "vless://56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1@autos.jykvpn.com:443?security=reality&encryption=none&pbk=MNTWCLyV7EquFn-J0a6KRlQZ0dt6QY5mmu7Dq8uDkxw&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=cdnjs.com&sid=c2a0b2d60a7fc300#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": true
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [fis.jykvpn.com]",
+      "server": "fis.jykvpn.com",
+      "port": 443,
+      "uuid": "56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": false,
+      "servername": "cdnjs.com",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "reality": {
+        "public-key": "MNTWCLyV7EquFn-J0a6KRlQZ0dt6QY5mmu7Dq8uDkxw",
+        "short-id": "c2a0b2d60a7fc300"
+      },
+      "flow": "xtls-rprx-vision",
+      "meta": {
+        "original_config": "vless://56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1@fis.jykvpn.com:443?security=reality&encryption=none&pbk=MNTWCLyV7EquFn-J0a6KRlQZ0dt6QY5mmu7Dq8uDkxw&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=cdnjs.com&sid=c2a0b2d60a7fc300#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": true
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [speedtest.org]",
+      "server": "speedtest.org",
+      "port": 443,
+      "uuid": "c7158ca6-7c6c-4701-bf7d-df0f98a9ca33",
+      "udp": true,
+      "tls": true,
+      "network": "ws",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": false,
+      "servername": "iwukb.ava-shabane.com",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "ws-opts": {
+        "path": "/harman",
+        "headers": {
+          "Host": "iwukb.ava-shabane.com"
+        }
+      },
+      "meta": {
+        "original_config": "vless://c7158ca6-7c6c-4701-bf7d-df0f98a9ca33@speedtest.org:443?path=%2Fharman&security=tls&encryption=none&host=iwukb.ava-shabane.com&type=ws&sni=iwukb.ava-shabane.com#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": false
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [158.220.88.63]",
+      "server": "158.220.88.63",
+      "port": 443,
+      "uuid": "7c9d302f-1438-4f37-a6e0-0591dc4a4614",
+      "udp": true,
+      "tls": true,
+      "network": "grpc",
+      "client-fingerprint": "safari",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": false,
+      "servername": "www.microsoft.com",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "reality": {
+        "public-key": "DTfizB6SKAjSe4gQVreWTIMpDT7HsDcqfR0_Y2xo7Gw",
+        "short-id": "7daa515f56d7db89"
+      },
+      "grpc-opts": {
+        "grpc-service-name": "7e41eb32ea906cebaf077110",
+        "grpc-mode": "gun"
+      },
+      "meta": {
+        "original_config": "vless://7c9d302f-1438-4f37-a6e0-0591dc4a4614@158.220.88.63:443?mode=gun&security=reality&encryption=none&pbk=DTfizB6SKAjSe4gQVreWTIMpDT7HsDcqfR0_Y2xo7Gw&fp=safari&type=grpc&serviceName=7e41eb32ea906cebaf077110&sni=www.microsoft.com&sid=7daa515f56d7db89#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": true
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [216.24.57.227]",
+      "server": "216.24.57.227",
+      "port": 443,
+      "uuid": "f64bdc57-0f54-4705-bf75-cfd646d98c06",
+      "udp": true,
+      "tls": true,
+      "network": "ws",
+      "client-fingerprint": "random",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": false,
+      "servername": "snippets.mnmnm.netlib.re",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "ws-opts": {
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "snippets.mnmnm.netlib.re"
+        }
+      },
+      "meta": {
+        "original_config": "vless://f64bdc57-0f54-4705-bf75-cfd646d98c06@216.24.57.227:443?path=%2F%3Fed%3D2560&security=tls&encryption=none&host=snippets.mnmnm.netlib.re&fp=random&type=ws&sni=snippets.mnmnm.netlib.re#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": false
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [45.67.139.37]",
+      "server": "45.67.139.37",
+      "port": 443,
+      "uuid": "3557aa39-7564-4362-9713-8a2dd2a98830",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": false,
+      "servername": "speedsmart.net",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "reality": {
+        "public-key": "k3h5nEAsMcyb9tVMeEepA4jd9JiPhcVCIVLPKWyao0E",
+        "short-id": "ed464ab7d7a8"
+      },
+      "flow": "xtls-rprx-vision",
+      "meta": {
+        "original_config": "vless://3557aa39-7564-4362-9713-8a2dd2a98830@45.67.139.37:443?security=reality&encryption=none&pbk=k3h5nEAsMcyb9tVMeEepA4jd9JiPhcVCIVLPKWyao0E&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=speedsmart.net&sid=ed464ab7d7a8#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": true
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [vp9.myphotomoments.ir]",
+      "server": "vp9.myphotomoments.ir",
+      "port": 443,
+      "uuid": "Warpi-Free-Vpn-In-GooglePlay",
+      "udp": true,
+      "tls": false,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": false,
+      "meta": {
+        "original_config": "vless://Warpi-Free-Vpn-In-GooglePlay@vp9.myphotomoments.ir:443?security=none&encryption=none&headerType=none&type=tcp#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": false
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [193.124.18.13]",
+      "server": "193.124.18.13",
+      "port": 443,
+      "uuid": "f64bdc57-0f54-4705-bf75-cfd646d98c06",
+      "udp": true,
+      "tls": true,
+      "network": "ws",
+      "client-fingerprint": "random",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": false,
+      "servername": "snippets.mnmnm.netlib.re",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "ws-opts": {
+        "path": "/?ed=2560Join---PLANB_NET---Join---PLANB_NET---Join---PLANB_NET---Join---PLANB_NET",
+        "headers": {
+          "Host": "snippets.mnmnm.netlib.re"
+        }
+      },
+      "meta": {
+        "original_config": "vless://f64bdc57-0f54-4705-bf75-cfd646d98c06@193.124.18.13:443?path=%2F%3Fed%3D2560Join---PLANB_NET---Join---PLANB_NET---Join---PLANB_NET---Join---PLANB_NET&security=tls&encryption=none&host=snippets.mnmnm.netlib.re&fp=random&type=ws&sni=snippets.mnmnm.netlib.re#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": false
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [www.speedtest.net] (2)",
+      "server": "www.speedtest.net",
+      "port": 443,
+      "uuid": "88538870-5626-4cd7-9cda-1e0b6253c9ce",
+      "udp": true,
+      "tls": true,
+      "network": "ws",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": false,
+      "servername": "limoo.apps724.site",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "ws-opts": {
+        "path": "/",
+        "headers": {
+          "Host": "limoo.apps724.site"
+        }
+      },
+      "meta": {
+        "original_config": "vless://88538870-5626-4cd7-9cda-1e0b6253c9ce@www.speedtest.net:443?path=%2F&security=tls&alpn=h2%2Chttp%2F1.1&encryption=none&fp=chrome&type=ws&sni=limoo.apps724.site#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": false
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [193.124.18.13] (2)",
+      "server": "193.124.18.13",
+      "port": 443,
+      "uuid": "f64bdc57-0f54-4705-bf75-cfd646d98c06",
+      "udp": true,
+      "tls": true,
+      "network": "ws",
+      "client-fingerprint": "random",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": false,
+      "servername": "snippets.mnmnm.netlib.re",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "ws-opts": {
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "snippets.mnmnm.netlib.re"
+        }
+      },
+      "meta": {
+        "original_config": "vless://f64bdc57-0f54-4705-bf75-cfd646d98c06@193.124.18.13:443?path=%2F%3Fed%3D2560&security=tls&encryption=none&host=snippets.mnmnm.netlib.re&fp=random&type=ws&sni=snippets.mnmnm.netlib.re#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": false
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [217.154.218.42]",
+      "server": "217.154.218.42",
+      "port": 443,
+      "uuid": "0b0b98be-fdaf-40cc-a953-cc4091c838e1",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": false,
+      "servername": "azure.com",
+      "alpn": [
+        "h2"
+      ],
+      "reality": {
+        "public-key": "ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw",
+        "short-id": ""
+      },
+      "flow": "xtls-rprx-vision",
+      "meta": {
+        "original_config": "vless://0b0b98be-fdaf-40cc-a953-cc4091c838e1@217.154.218.42:443?security=reality&alpn=h2&encryption=none&pbk=ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=azure.com#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": true
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [173.245.58.113]",
+      "server": "173.245.58.113",
+      "port": 443,
+      "uuid": "f64bdc57-0f54-4705-bf75-cfd646d98c06",
+      "udp": true,
+      "tls": true,
+      "network": "ws",
+      "client-fingerprint": "random",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": false,
+      "servername": "snippets.nneko.netlib.re",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "ws-opts": {
+        "path": "/?ed=2048Join---vpnv2r4y---Join---vpnv2r4y---Join---vpnv2r4y---Join---vpnv2r4y",
+        "headers": {
+          "Host": "snippets.nneko.netlib.re"
+        }
+      },
+      "meta": {
+        "original_config": "vless://f64bdc57-0f54-4705-bf75-cfd646d98c06@173.245.58.113:443?path=%2F%3Fed%3D2048Join---vpnv2r4y---Join---vpnv2r4y---Join---vpnv2r4y---Join---vpnv2r4y&security=tls&encryption=none&host=snippets.nneko.netlib.re&fp=random&type=ws&sni=snippets.nneko.netlib.re#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": false
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [pl.jykvpn.com]",
+      "server": "pl.jykvpn.com",
+      "port": 443,
+      "uuid": "56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": false,
+      "servername": "cdnjs.com",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "reality": {
+        "public-key": "MNTWCLyV7EquFn-J0a6KRlQZ0dt6QY5mmu7Dq8uDkxw",
+        "short-id": "4c02bbbfa833b3b6"
+      },
+      "flow": "xtls-rprx-vision",
+      "meta": {
+        "original_config": "vless://56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1@pl.jykvpn.com:443?security=reality&encryption=none&pbk=MNTWCLyV7EquFn-J0a6KRlQZ0dt6QY5mmu7Dq8uDkxw&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=cdnjs.com&sid=4c02bbbfa833b3b6#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": true
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [216.24.57.119]",
+      "server": "216.24.57.119",
+      "port": 443,
+      "uuid": "f64bdc57-0f54-4705-bf75-cfd646d98c06",
+      "udp": true,
+      "tls": true,
+      "network": "ws",
+      "client-fingerprint": "random",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": false,
+      "servername": "snippets.mnmnm.netlib.re",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "ws-opts": {
+        "path": "/?ed=2560J---_T",
+        "headers": {
+          "Host": "snippets.mnmnm.netlib.re"
+        }
+      },
+      "meta": {
+        "original_config": "vless://f64bdc57-0f54-4705-bf75-cfd646d98c06@216.24.57.119:443?path=%2F%3Fed%3D2560J---_T&security=tls&encryption=none&host=snippets.mnmnm.netlib.re&fp=random&type=ws&sni=snippets.mnmnm.netlib.re#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": false
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [ru-nl01-vlr01.tcp-reset-club.net]",
+      "server": "ru-nl01-vlr01.tcp-reset-club.net",
+      "port": 443,
+      "uuid": "06ff1742-a37d-4e2b-aa60-9571d9f7efdb",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": false,
+      "servername": "hls-svod.itunes.apple.com",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "reality": {
+        "public-key": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
+        "short-id": "31"
+      },
+      "flow": "xtls-rprx-vision",
+      "meta": {
+        "original_config": "vless://06ff1742-a37d-4e2b-aa60-9571d9f7efdb@ru-nl01-vlr01.tcp-reset-club.net:443?security=reality&encryption=none&pbk=mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg&headerType=none&fp=chrome&spx=%2F&type=tcp&flow=xtls-rprx-vision&sni=hls-svod.itunes.apple.com&sid=31#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": true
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [delilah.ns.cloudflare.com]",
+      "server": "delilah.ns.cloudflare.com",
+      "port": 443,
+      "uuid": "53f0bca8-f170-4ef7-8031-c7d441189dbf",
+      "udp": true,
+      "tls": true,
+      "network": "ws",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": false,
+      "servername": "638987972960682357.prius-amsht.info",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "ws-opts": {
+        "path": "/cahttingws",
+        "headers": {
+          "Host": "638987972960682357.prius-amsht.info"
+        }
+      },
+      "meta": {
+        "original_config": "vless://53f0bca8-f170-4ef7-8031-c7d441189dbf@delilah.ns.cloudflare.com:443?path=%2Fcahttingws&security=tls&encryption=none&type=ws&sni=638987972960682357.prius-amsht.info#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": false
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [bia-kanalemoon.vigilante.ir]",
+      "server": "bia-kanalemoon.vigilante.ir",
+      "port": 443,
+      "uuid": "638817fb-c681-41ab-847a-125e9fd6f9e8",
+      "udp": true,
+      "tls": true,
+      "network": "grpc",
+      "client-fingerprint": "firefox",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": false,
+      "servername": "tgju.com",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "reality": {
+        "public-key": "0PUc6kHXBAUkpjN6Zm3KkdpnpMHDl45vl-yL_Oyg4wE",
+        "short-id": ""
+      },
+      "grpc-opts": {
+        "grpc-service-name": "/Daily-Configs-Daily-Configs-Daily-Configs-Daily-Configs-Daily-Configs-Daily-Configs-Daily-Configs-Daily-Configs-Daily-Configs-Daily-Configs?ed=2048",
+        "grpc-mode": "gun"
+      },
+      "meta": {
+        "original_config": "vless://638817fb-c681-41ab-847a-125e9fd6f9e8@bia-kanalemoon.vigilante.ir:443?encryption=none&security=reality&sni=tgju.com&fp=firefox&pbk=0PUc6kHXBAUkpjN6Zm3KkdpnpMHDl45vl-yL_Oyg4wE&spx=%2F&type=grpc&authority=&serviceName=%2FDaily-Configs-Daily-Configs-Daily-Configs-Daily-Configs-Daily-Configs-Daily-Configs-Daily-Configs-Daily-Configs-Daily-Configs-Daily-Configs%3Fed%3D2048&mode=multi#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": true
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [autos.jykvpn.com] (2)",
+      "server": "autos.jykvpn.com",
+      "port": 443,
+      "uuid": "56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": false,
+      "servername": "cdnjs.com",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "reality": {
+        "public-key": "MNTWCLyV7EquFn-J0a6KRlQZ0dt6QY5mmu7Dq8uDkxw",
+        "short-id": "4c02bbbfa833b3b6"
+      },
+      "flow": "xtls-rprx-vision",
+      "meta": {
+        "original_config": "vless://56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1@autos.jykvpn.com:443?security=reality&encryption=none&pbk=MNTWCLyV7EquFn-J0a6KRlQZ0dt6QY5mmu7Dq8uDkxw&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=cdnjs.com&sid=4c02bbbfa833b3b6#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": true
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [fis.jykvpn.com] (2)",
+      "server": "fis.jykvpn.com",
+      "port": 443,
+      "uuid": "56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": false,
+      "servername": "cdnjs.com",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "reality": {
+        "public-key": "MNTWCLyV7EquFn-J0a6KRlQZ0dt6QY5mmu7Dq8uDkxw",
+        "short-id": "4c02bbbfa833b3b6"
+      },
+      "flow": "xtls-rprx-vision",
+      "meta": {
+        "original_config": "vless://56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1@fis.jykvpn.com:443?security=reality&encryption=none&pbk=MNTWCLyV7EquFn-J0a6KRlQZ0dt6QY5mmu7Dq8uDkxw&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=cdnjs.com&sid=4c02bbbfa833b3b6#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": true
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [youtube.jykvpn.com]",
+      "server": "youtube.jykvpn.com",
+      "port": 443,
+      "uuid": "56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": false,
+      "servername": "cdnjs.com",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "reality": {
+        "public-key": "MNTWCLyV7EquFn-J0a6KRlQZ0dt6QY5mmu7Dq8uDkxw",
+        "short-id": "4c02bbbfa833b3b6"
+      },
+      "flow": "xtls-rprx-vision",
+      "meta": {
+        "original_config": "vless://56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1@youtube.jykvpn.com:443?security=reality&encryption=none&pbk=MNTWCLyV7EquFn-J0a6KRlQZ0dt6QY5mmu7Dq8uDkxw&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=cdnjs.com&sid=4c02bbbfa833b3b6#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": true
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [45.67.139.37] (2)",
+      "server": "45.67.139.37",
+      "port": 443,
+      "uuid": "3557aa39-7564-4362-9713-8a2dd2a98830",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": false,
+      "servername": "speedsmart.net",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "reality": {
+        "public-key": "k3h5nEAsMcyb9tVMeEepA4jd9JiPhcVCIVLPKWyao0E",
+        "short-id": "ed464ab7d7a8"
+      },
+      "flow": "xtls-rprx-vision",
+      "meta": {
+        "original_config": "vless://3557aa39-7564-4362-9713-8a2dd2a98830@45.67.139.37:443?security=reality&encryption=none&pbk=k3h5nEAsMcyb9tVMeEepA4jd9JiPhcVCIVLPKWyao0E&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=speedsmart.net&sid=ed464ab7d7a8#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": true
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [autos.jykvpn.com] (3)",
+      "server": "autos.jykvpn.com",
+      "port": 443,
+      "uuid": "56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": false,
+      "servername": "cdnjs.com",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "reality": {
+        "public-key": "MNTWCLyV7EquFn-J0a6KRlQZ0dt6QY5mmu7Dq8uDkxw",
+        "short-id": "c2a0b2d60a7fc300"
+      },
+      "flow": "xtls-rprx-vision",
+      "meta": {
+        "original_config": "vless://56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1@autos.jykvpn.com:443?security=reality&encryption=none&pbk=MNTWCLyV7EquFn-J0a6KRlQZ0dt6QY5mmu7Dq8uDkxw&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=cdnjs.com&sid=c2a0b2d60a7fc300#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": true
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [nls.jykvpn.com]",
+      "server": "nls.jykvpn.com",
+      "port": 443,
+      "uuid": "56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": false,
+      "servername": "cdnjs.com",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "reality": {
+        "public-key": "MNTWCLyV7EquFn-J0a6KRlQZ0dt6QY5mmu7Dq8uDkxw",
+        "short-id": "c2a0b2d60a7fc300"
+      },
+      "flow": "xtls-rprx-vision",
+      "meta": {
+        "original_config": "vless://56718b04-3fe6-4ef3-a61f-cd9b3b5f64f1@nls.jykvpn.com:443?security=reality&encryption=none&pbk=MNTWCLyV7EquFn-J0a6KRlQZ0dt6QY5mmu7Dq8uDkxw&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=cdnjs.com&sid=c2a0b2d60a7fc300#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": true
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [fi.podpiska.vip]",
+      "server": "fi.podpiska.vip",
+      "port": 443,
+      "uuid": "5d3bffc3-20f6-41ae-9fe7-bb12a122c3a3",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": false,
+      "servername": "uspehudacha.com",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "reality": {
+        "public-key": "L-7MZ5IB5uSmLn34BQsBOF8XaDN3B2as4ye-nWkJEzI",
+        "short-id": "4a6c2577ce53af9e"
+      },
+      "flow": "xtls-rprx-vision",
+      "meta": {
+        "original_config": "vless://5d3bffc3-20f6-41ae-9fe7-bb12a122c3a3@fi.podpiska.vip:443?security=reality&encryption=none&pbk=L-7MZ5IB5uSmLn34BQsBOF8XaDN3B2as4ye-nWkJEzI&host=%2F%3FBIA_TELEGRAM%40MARAMBASHI_MARAMBASHI_MARAMBASHI_MARAMBASHI&headerType=none&fp=chrome&type=tcp&flow=xtls-rprx-vision&sni=uspehudacha.com&sid=4a6c2577ce53af9e#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": true
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [160.187.111.222]",
+      "server": "160.187.111.222",
+      "port": 443,
+      "uuid": "3e7f67de-648e-4871-b51a-a225214d41ee",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": true,
+      "xudp": false,
+      "packet-addr": true,
+      "servername": "images-na.ssl-images-amazon.com",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "reality": {
+        "public-key": "TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw",
+        "short-id": ""
+      },
+      "meta": {
+        "original_config": "vless://3e7f67de-648e-4871-b51a-a225214d41ee@160.187.111.222:443?security=reality&sni=images-na.ssl-images-amazon.com&allowInsecure=1&fp=chrome&pbk=TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw&type=tcp&packetEncoding=xudp&encryption=none#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": true
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [160.187.111.222] (2)",
+      "server": "160.187.111.222",
+      "port": 443,
+      "uuid": "3e7f67de-648e-4871-b51a-a225214d41ee",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": true,
+      "servername": "images-na.ssl-images-amazon.com",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "reality": {
+        "public-key": "TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw",
+        "short-id": ""
+      },
+      "meta": {
+        "original_config": "vless://3e7f67de-648e-4871-b51a-a225214d41ee@160.187.111.222:443?security=reality&sni=images-na.ssl-images-amazon.com&fp=chrome&pbk=TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw&type=tcp&packetEncoding=xudp&encryption=none#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": true
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [65.108.1.249]",
+      "server": "65.108.1.249",
+      "port": 443,
+      "uuid": "14e4cf26-44e1-4888-ba87-e5e6ba3a6b0f",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": true,
+      "xudp": false,
+      "packet-addr": true,
+      "servername": "cdn.chandplus.com",
+      "alpn": [
+        "h3",
+        "h2",
+        "http/1.1"
+      ],
+      "meta": {
+        "original_config": "vless://14e4cf26-44e1-4888-ba87-e5e6ba3a6b0f@65.108.1.249:443?security=tls&sni=cdn.chandplus.com&alpn=h3,h2,http/1.1&allowInsecure=1&fp=chrome&type=tcp&packetEncoding=xudp&encryption=none#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": false
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [65.108.231.185]",
+      "server": "65.108.231.185",
+      "port": 443,
+      "uuid": "440766d1-858f-4719-84f5-c2de6f6227ba",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": true,
+      "xudp": false,
+      "packet-addr": true,
+      "servername": "loCal.rogsoftwaregroup.com",
+      "alpn": [
+        "h3",
+        "h2",
+        "http/1.1"
+      ],
+      "meta": {
+        "original_config": "vless://440766d1-858f-4719-84f5-c2de6f6227ba@65.108.231.185:443?security=tls&sni=loCal.rogsoftwaregroup.com&alpn=h3,h2,http/1.1&allowInsecure=1&fp=chrome&type=tcp&packetEncoding=xudp&encryption=none#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": false
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [95.217.206.161]",
+      "server": "95.217.206.161",
+      "port": 443,
+      "uuid": "01d68a9b-be48-4c7b-b4f9-71b29c4cfaca",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": true,
+      "xudp": false,
+      "packet-addr": true,
+      "servername": "api.chandplus.com",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "meta": {
+        "original_config": "vless://01d68a9b-be48-4c7b-b4f9-71b29c4cfaca@95.217.206.161:443?security=tls&sni=api.chandplus.com&allowInsecure=1&fp=chrome&type=tcp&packetEncoding=xudp&encryption=none#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": false
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [65.108.231.185] (2)",
+      "server": "65.108.231.185",
+      "port": 443,
+      "uuid": "440766d1-858f-4719-84f5-c2de6f6227ba",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": true,
+      "xudp": false,
+      "packet-addr": true,
+      "servername": "local.rogsoftwaregroup.com",
+      "alpn": [
+        "h3",
+        "h2",
+        "http/1.1"
+      ],
+      "meta": {
+        "original_config": "vless://440766d1-858f-4719-84f5-c2de6f6227ba@65.108.231.185:443?security=tls&sni=local.rogsoftwaregroup.com&alpn=h3,h2,http/1.1&allowInsecure=1&fp=chrome&type=tcp&packetEncoding=xudp&encryption=none#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": false
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [65.108.1.249] (2)",
+      "server": "65.108.1.249",
+      "port": 443,
+      "uuid": "14e4cf26-44e1-4888-ba87-e5e6ba3a6b0f",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": true,
+      "servername": "cdn.chandplus.com",
+      "alpn": [
+        "h3",
+        "h2",
+        "http/1.1"
+      ],
+      "meta": {
+        "original_config": "vless://14e4cf26-44e1-4888-ba87-e5e6ba3a6b0f@65.108.1.249:443?security=tls&sni=cdn.chandplus.com&alpn=h3,h2,http/1.1&fp=chrome&type=tcp&packetEncoding=xudp&encryption=none#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": false
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [95.217.206.161] (2)",
+      "server": "95.217.206.161",
+      "port": 443,
+      "uuid": "01d68a9b-be48-4c7b-b4f9-71b29c4cfaca",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": true,
+      "servername": "api.chandplus.com",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "meta": {
+        "original_config": "vless://01d68a9b-be48-4c7b-b4f9-71b29c4cfaca@95.217.206.161:443?security=tls&sni=api.chandplus.com&fp=chrome&type=tcp&packetEncoding=xudp&encryption=none#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": false
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [65.108.1.249] (3)",
+      "server": "65.108.1.249",
+      "port": 443,
+      "uuid": "14e4cf26-44e1-4888-ba87-e5e6ba3a6b0f",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": true,
+      "xudp": false,
+      "packet-addr": true,
+      "servername": "cdn.chandplus.com",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "meta": {
+        "original_config": "vless://14e4cf26-44e1-4888-ba87-e5e6ba3a6b0f@65.108.1.249:443?security=tls&sni=cdn.chandplus.com&allowInsecure=1&fp=chrome&type=tcp&packetEncoding=xudp&encryption=none#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": false
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [65.109.145.54]",
+      "server": "65.109.145.54",
+      "port": 443,
+      "uuid": "8f82acbe-f328-471a-8000-fbea349e6ce0",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": true,
+      "xudp": false,
+      "packet-addr": true,
+      "servername": "dedic.app-browser.org",
+      "alpn": [
+        "h3",
+        "h2",
+        "http/1.1"
+      ],
+      "meta": {
+        "original_config": "vless://8f82acbe-f328-471a-8000-fbea349e6ce0@65.109.145.54:443?security=tls&sni=dedic.app-browser.org&alpn=h3,h2,http/1.1&allowInsecure=1&fp=chrome&type=tcp&packetEncoding=xudp&encryption=none#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": false
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [65.109.145.54] (2)",
+      "server": "65.109.145.54",
+      "port": 443,
+      "uuid": "8f82acbe-f328-471a-8000-fbea349e6ce0",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": true,
+      "servername": "dedic.app-browser.org",
+      "alpn": [
+        "h3",
+        "h2",
+        "http/1.1"
+      ],
+      "meta": {
+        "original_config": "vless://8f82acbe-f328-471a-8000-fbea349e6ce0@65.109.145.54:443?security=tls&sni=dedic.app-browser.org&alpn=h3,h2,http/1.1&fp=chrome&type=tcp&packetEncoding=xudp&encryption=none#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": false
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [65.108.231.185] (3)",
+      "server": "65.108.231.185",
+      "port": 443,
+      "uuid": "440766d1-858f-4719-84f5-c2de6f6227ba",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": true,
+      "servername": "loCal.rogsoftwaregroup.com",
+      "alpn": [
+        "h3",
+        "h2",
+        "http/1.1"
+      ],
+      "meta": {
+        "original_config": "vless://440766d1-858f-4719-84f5-c2de6f6227ba@65.108.231.185:443?security=tls&sni=loCal.rogsoftwaregroup.com&alpn=h3,h2,http/1.1&fp=chrome&type=tcp&packetEncoding=xudp&encryption=none#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": false
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [94.131.104.178]",
+      "server": "94.131.104.178",
+      "port": 443,
+      "uuid": "d5c1b5d7-055b-4457-bc3a-6e99919c1bcb",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": true,
+      "servername": "latvia6.clearorbitllc.com",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "reality": {
+        "public-key": "LDEOpY1G4Cw1drC2ao9AQRSTwwhTTMDk5a7Kyw41Hlw",
+        "short-id": "81e0b568"
+      },
+      "flow": "xtls-rprx-vision",
+      "meta": {
+        "original_config": "vless://d5c1b5d7-055b-4457-bc3a-6e99919c1bcb@94.131.104.178:443?security=reality&sni=latvia6.clearorbitllc.com&fp=chrome&pbk=LDEOpY1G4Cw1drC2ao9AQRSTwwhTTMDk5a7Kyw41Hlw&sid=81e0b568&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": true
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [154.218.15.198]",
+      "server": "154.218.15.198",
+      "port": 443,
+      "uuid": "29187857-4a1f-4d1e-88eb-0016771e0dbb",
+      "udp": true,
+      "tls": true,
+      "network": "ws",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": true,
+      "servername": "vless.hubp.de",
+      "alpn": [
+        "h3"
+      ],
+      "ws-opts": {
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "vless.hubp.de"
+        }
+      },
+      "meta": {
+        "original_config": "vless://29187857-4a1f-4d1e-88eb-0016771e0dbb@154.218.15.198:443?security=tls&sni=vless.hubp.de&alpn=h3&fp=chrome&type=ws&path=/?ed%3D2560&host=vless.hubp.de&packetEncoding=xudp&encryption=none#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": false
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [154.218.15.198] (2)",
+      "server": "154.218.15.198",
+      "port": 443,
+      "uuid": "29187857-4a1f-4d1e-88eb-0016771e0dbb",
+      "udp": true,
+      "tls": true,
+      "network": "ws",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": true,
+      "xudp": false,
+      "packet-addr": true,
+      "servername": "vless.hubp.de",
+      "alpn": [
+        "h3"
+      ],
+      "ws-opts": {
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "vless.hubp.de"
+        }
+      },
+      "meta": {
+        "original_config": "vless://29187857-4a1f-4d1e-88eb-0016771e0dbb@154.218.15.198:443?security=tls&sni=vless.hubp.de&alpn=h3&allowInsecure=1&fp=chrome&type=ws&path=/?ed%3D2560&host=vless.hubp.de&packetEncoding=xudp&encryption=none#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": false
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [27.50.48.102]",
+      "server": "27.50.48.102",
+      "port": 443,
+      "uuid": "c952efd5-e3b3-4096-b1ac-dbdda8f68a15",
+      "udp": true,
+      "tls": true,
+      "network": "ws",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": true,
+      "xudp": false,
+      "packet-addr": true,
+      "servername": "vless.hubp.de",
+      "alpn": [
+        "h3"
+      ],
+      "ws-opts": {
+        "path": "/snippets/ip=tp50000.kr.proxyip.fgfw.eu.org:50000",
+        "headers": {
+          "Host": "vless.hubp.de"
+        }
+      },
+      "meta": {
+        "original_config": "vless://c952efd5-e3b3-4096-b1ac-dbdda8f68a15@27.50.48.102:443?security=tls&sni=vless.hubp.de&alpn=h3&allowInsecure=1&fp=chrome&type=ws&path=/snippets/ip%3Dtp50000.kr.proxyip.fgfw.eu.org:50000&host=vless.hubp.de&packetEncoding=xudp&encryption=none#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": false
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [27.50.48.102] (2)",
+      "server": "27.50.48.102",
+      "port": 443,
+      "uuid": "c952efd5-e3b3-4096-b1ac-dbdda8f68a15",
+      "udp": true,
+      "tls": true,
+      "network": "ws",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": true,
+      "servername": "vless.hubp.de",
+      "alpn": [
+        "h3"
+      ],
+      "ws-opts": {
+        "path": "/snippets/ip=tp50000.kr.proxyip.fgfw.eu.org:50000",
+        "headers": {
+          "Host": "vless.hubp.de"
+        }
+      },
+      "meta": {
+        "original_config": "vless://c952efd5-e3b3-4096-b1ac-dbdda8f68a15@27.50.48.102:443?security=tls&sni=vless.hubp.de&alpn=h3&fp=chrome&type=ws&path=/snippets/ip%3Dtp50000.kr.proxyip.fgfw.eu.org:50000&host=vless.hubp.de&packetEncoding=xudp&encryption=none#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": false
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [27.50.49.104]",
+      "server": "27.50.49.104",
+      "port": 443,
+      "uuid": "c952efd5-e3b3-4096-b1ac-dbdda8f68a15",
+      "udp": true,
+      "tls": true,
+      "network": "ws",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": true,
+      "xudp": false,
+      "packet-addr": true,
+      "servername": "vless.hubp.de",
+      "alpn": [
+        "h3"
+      ],
+      "ws-opts": {
+        "path": "/snippets/ip=tp50000.kr.proxyip.fgfw.eu.org:50000",
+        "headers": {
+          "Host": "vless.hubp.de"
+        }
+      },
+      "meta": {
+        "original_config": "vless://c952efd5-e3b3-4096-b1ac-dbdda8f68a15@27.50.49.104:443?security=tls&sni=vless.hubp.de&alpn=h3&allowInsecure=1&fp=chrome&type=ws&path=/snippets/ip%3Dtp50000.kr.proxyip.fgfw.eu.org:50000&host=vless.hubp.de&packetEncoding=xudp&encryption=none#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": false
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [27.50.49.104] (2)",
+      "server": "27.50.49.104",
+      "port": 443,
+      "uuid": "c952efd5-e3b3-4096-b1ac-dbdda8f68a15",
+      "udp": true,
+      "tls": true,
+      "network": "ws",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": true,
+      "servername": "vless.hubp.de",
+      "alpn": [
+        "h3"
+      ],
+      "ws-opts": {
+        "path": "/snippets/ip=tp50000.kr.proxyip.fgfw.eu.org:50000",
+        "headers": {
+          "Host": "vless.hubp.de"
+        }
+      },
+      "meta": {
+        "original_config": "vless://c952efd5-e3b3-4096-b1ac-dbdda8f68a15@27.50.49.104:443?security=tls&sni=vless.hubp.de&alpn=h3&fp=chrome&type=ws&path=/snippets/ip%3Dtp50000.kr.proxyip.fgfw.eu.org:50000&host=vless.hubp.de&packetEncoding=xudp&encryption=none#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": false
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [62.60.233.30]",
+      "server": "62.60.233.30",
+      "port": 443,
+      "uuid": "8377aac9-f3b3-42df-a5ea-9254f37e7b34",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": true,
+      "xudp": false,
+      "packet-addr": true,
+      "servername": "tr.eu-ffast.com",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "reality": {
+        "public-key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+        "short-id": "50"
+      },
+      "flow": "xtls-rprx-vision",
+      "meta": {
+        "original_config": "vless://8377aac9-f3b3-42df-a5ea-9254f37e7b34@62.60.233.30:443?security=reality&sni=tr.eu-ffast.com&allowInsecure=1&fp=chrome&pbk=-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw&sid=50&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": true
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [62.133.63.138]",
+      "server": "62.133.63.138",
+      "port": 443,
+      "uuid": "8377aac9-f3b3-42df-a5ea-9254f37e7b34",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": true,
+      "servername": "tr.eu-ffast.com",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "reality": {
+        "public-key": "-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw",
+        "short-id": "50"
+      },
+      "flow": "xtls-rprx-vision",
+      "meta": {
+        "original_config": "vless://8377aac9-f3b3-42df-a5ea-9254f37e7b34@62.133.63.138:443?security=reality&sni=tr.eu-ffast.com&fp=chrome&pbk=-tePObR3oZwGAUOb5kqTYkNWl6rtUKl0RFuzuu06wgw&sid=50&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": true
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [83.222.23.113]",
+      "server": "83.222.23.113",
+      "port": 443,
+      "uuid": "9a8a52d6-f24b-4f03-bf6f-f4854717f54e",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": true,
+      "xudp": false,
+      "packet-addr": true,
+      "servername": "google.com",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "reality": {
+        "public-key": "Jwam5OBjXf4bffZzA3IqzfcNONIMhYMgjysXPU44XFU",
+        "short-id": "c4da507c203b545a"
+      },
+      "flow": "xtls-rprx-vision",
+      "meta": {
+        "original_config": "vless://9a8a52d6-f24b-4f03-bf6f-f4854717f54e@83.222.23.113:443?security=reality&sni=google.com&allowInsecure=1&fp=chrome&pbk=Jwam5OBjXf4bffZzA3IqzfcNONIMhYMgjysXPU44XFU&sid=c4da507c203b545a&type=tcp&flow=xtls-rprx-vision&packetEncoding=xudp&encryption=none#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": true
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [104.21.36.57]",
+      "server": "104.21.36.57",
+      "port": 443,
+      "uuid": "6c11247b-6078-461a-93d5-22e4df284e6d",
+      "udp": true,
+      "tls": true,
+      "network": "ws",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": true,
+      "xudp": false,
+      "packet-addr": true,
+      "servername": "mirror.fullmargintraders.com",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "ws-opts": {
+        "path": "/wsv/6c11247b-6078-461a-93d5-22e4df284e6d",
+        "headers": {
+          "Host": "mirror.fullmargintraders.com"
+        }
+      },
+      "meta": {
+        "original_config": "vless://6c11247b-6078-461a-93d5-22e4df284e6d@104.21.36.57:443?security=tls&sni=mirror.fullmargintraders.com&allowInsecure=1&fp=chrome&type=ws&path=/wsv/6c11247b-6078-461a-93d5-22e4df284e6d&host=mirror.fullmargintraders.com&packetEncoding=xudp&encryption=none#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": false
+      }
+    },
+    {
+      "type": "vless",
+      "name": "ARISTA🌐 - VLESS [ru.sfasti.ru]",
+      "server": "ru.sfasti.ru",
+      "port": 443,
+      "uuid": "6fae85ca-395a-4f27-9eb2-75123befc475",
+      "udp": true,
+      "tls": true,
+      "network": "tcp",
+      "client-fingerprint": "chrome",
+      "skip-cert-verify": false,
+      "xudp": false,
+      "packet-addr": false,
+      "servername": "ru.sfasti.ru",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ],
+      "reality": {
+        "public-key": "J_jQq9-SWQZjiMhuPaFV7V2MaJ4pkKgVRaz7x6tmvy8",
+        "short-id": "16895459a2c7768d"
+      },
+      "flow": "xtls-rprx-vision",
+      "meta": {
+        "original_config": "vless://6fae85ca-395a-4f27-9eb2-75123befc475@ru.sfasti.ru:443?security=reality&type=tcp&headerType=&flow=xtls-rprx-vision&path=&host=&sni=ru.sfasti.ru&fp=chrome&pbk=J_jQq9-SWQZjiMhuPaFV7V2MaJ4pkKgVRaz7x6tmvy8&sid=16895459a2c7768d#ARISTA🌐",
+        "processed_at": "2025-11-16T00:38:20.444Z",
+        "stealth_mode": "none",
+        "multi_path": "none",
+        "compression": "none",
+        "is_reality": true
+      }
+    }
+  ],
+  "proxy-groups": [
+    {
+      "name": "ARISTA🌐",
+      "type": "select",
+      "proxies": [
+        "ARISTA🌐 - Combined [157.180.123.25]",
+        "ARISTA🌐 - Combined [all.tellmethetrue.shop]",
+        "ARISTA🌐 - Combined [91.99.177.36]",
+        "ARISTA🌐 - Combined [all.tellmethetrue.shop] (2)",
+        "ARISTA🌐 - Combined [104.26.6.89]",
+        "ARISTA🌐 - Combined [www.speedtest.net]",
+        "ARISTA🌐 - Combined [172.66.47.156]",
+        "ARISTA🌐 - Combined [104.21.86.253]",
+        "ARISTA🌐 - Combined [all.tellmethetrue.shop] (3)",
+        "ARISTA🌐 - VLESS [8.39.125.194]",
+        "ARISTA🌐 - VLESS [8.39.125.85]",
+        "ARISTA🌐 - VLESS [all.tellmethetrue.shop] (4)",
+        "ARISTA🌐 - VLESS [autos.jykvpn.com]",
+        "ARISTA🌐 - VLESS [fis.jykvpn.com]",
+        "ARISTA🌐 - VLESS [speedtest.org]",
+        "ARISTA🌐 - VLESS [158.220.88.63]",
+        "ARISTA🌐 - VLESS [216.24.57.227]",
+        "ARISTA🌐 - VLESS [45.67.139.37]",
+        "ARISTA🌐 - VLESS [vp9.myphotomoments.ir]",
+        "ARISTA🌐 - VLESS [193.124.18.13]",
+        "ARISTA🌐 - VLESS [www.speedtest.net] (2)",
+        "ARISTA🌐 - VLESS [193.124.18.13] (2)",
+        "ARISTA🌐 - VLESS [217.154.218.42]",
+        "ARISTA🌐 - VLESS [173.245.58.113]",
+        "ARISTA🌐 - VLESS [pl.jykvpn.com]",
+        "ARISTA🌐 - VLESS [216.24.57.119]",
+        "ARISTA🌐 - VLESS [ru-nl01-vlr01.tcp-reset-club.net]",
+        "ARISTA🌐 - VLESS [delilah.ns.cloudflare.com]",
+        "ARISTA🌐 - VLESS [bia-kanalemoon.vigilante.ir]",
+        "ARISTA🌐 - VLESS [autos.jykvpn.com] (2)",
+        "ARISTA🌐 - VLESS [fis.jykvpn.com] (2)",
+        "ARISTA🌐 - VLESS [youtube.jykvpn.com]",
+        "ARISTA🌐 - VLESS [45.67.139.37] (2)",
+        "ARISTA🌐 - VLESS [autos.jykvpn.com] (3)",
+        "ARISTA🌐 - VLESS [nls.jykvpn.com]",
+        "ARISTA🌐 - VLESS [fi.podpiska.vip]",
+        "ARISTA🌐 - VLESS [160.187.111.222]",
+        "ARISTA🌐 - VLESS [160.187.111.222] (2)",
+        "ARISTA🌐 - VLESS [65.108.1.249]",
+        "ARISTA🌐 - VLESS [65.108.231.185]",
+        "ARISTA🌐 - VLESS [95.217.206.161]",
+        "ARISTA🌐 - VLESS [65.108.231.185] (2)",
+        "ARISTA🌐 - VLESS [65.108.1.249] (2)",
+        "ARISTA🌐 - VLESS [95.217.206.161] (2)",
+        "ARISTA🌐 - VLESS [65.108.1.249] (3)",
+        "ARISTA🌐 - VLESS [65.109.145.54]",
+        "ARISTA🌐 - VLESS [65.109.145.54] (2)",
+        "ARISTA🌐 - VLESS [65.108.231.185] (3)",
+        "ARISTA🌐 - VLESS [94.131.104.178]",
+        "ARISTA🌐 - VLESS [154.218.15.198]",
+        "ARISTA🌐 - VLESS [154.218.15.198] (2)",
+        "ARISTA🌐 - VLESS [27.50.48.102]",
+        "ARISTA🌐 - VLESS [27.50.48.102] (2)",
+        "ARISTA🌐 - VLESS [27.50.49.104]",
+        "ARISTA🌐 - VLESS [27.50.49.104] (2)",
+        "ARISTA🌐 - VLESS [62.60.233.30]",
+        "ARISTA🌐 - VLESS [62.133.63.138]",
+        "ARISTA🌐 - VLESS [83.222.23.113]",
+        "ARISTA🌐 - VLESS [104.21.36.57]",
+        "ARISTA🌐 - VLESS [ru.sfasti.ru]"
+      ],
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": 300
+    },
+    {
+      "name": "ARISTA🌐 - Auto",
+      "type": "url-test",
+      "proxies": [
+        "ARISTA🌐 - Combined [157.180.123.25]",
+        "ARISTA🌐 - Combined [all.tellmethetrue.shop]",
+        "ARISTA🌐 - Combined [91.99.177.36]",
+        "ARISTA🌐 - Combined [all.tellmethetrue.shop] (2)",
+        "ARISTA🌐 - Combined [104.26.6.89]",
+        "ARISTA🌐 - Combined [www.speedtest.net]",
+        "ARISTA🌐 - Combined [172.66.47.156]",
+        "ARISTA🌐 - Combined [104.21.86.253]",
+        "ARISTA🌐 - Combined [all.tellmethetrue.shop] (3)",
+        "ARISTA🌐 - VLESS [8.39.125.194]",
+        "ARISTA🌐 - VLESS [8.39.125.85]",
+        "ARISTA🌐 - VLESS [all.tellmethetrue.shop] (4)",
+        "ARISTA🌐 - VLESS [autos.jykvpn.com]",
+        "ARISTA🌐 - VLESS [fis.jykvpn.com]",
+        "ARISTA🌐 - VLESS [speedtest.org]",
+        "ARISTA🌐 - VLESS [158.220.88.63]",
+        "ARISTA🌐 - VLESS [216.24.57.227]",
+        "ARISTA🌐 - VLESS [45.67.139.37]",
+        "ARISTA🌐 - VLESS [vp9.myphotomoments.ir]",
+        "ARISTA🌐 - VLESS [193.124.18.13]",
+        "ARISTA🌐 - VLESS [www.speedtest.net] (2)",
+        "ARISTA🌐 - VLESS [193.124.18.13] (2)",
+        "ARISTA🌐 - VLESS [217.154.218.42]",
+        "ARISTA🌐 - VLESS [173.245.58.113]",
+        "ARISTA🌐 - VLESS [pl.jykvpn.com]",
+        "ARISTA🌐 - VLESS [216.24.57.119]",
+        "ARISTA🌐 - VLESS [ru-nl01-vlr01.tcp-reset-club.net]",
+        "ARISTA🌐 - VLESS [delilah.ns.cloudflare.com]",
+        "ARISTA🌐 - VLESS [bia-kanalemoon.vigilante.ir]",
+        "ARISTA🌐 - VLESS [autos.jykvpn.com] (2)",
+        "ARISTA🌐 - VLESS [fis.jykvpn.com] (2)",
+        "ARISTA🌐 - VLESS [youtube.jykvpn.com]",
+        "ARISTA🌐 - VLESS [45.67.139.37] (2)",
+        "ARISTA🌐 - VLESS [autos.jykvpn.com] (3)",
+        "ARISTA🌐 - VLESS [nls.jykvpn.com]",
+        "ARISTA🌐 - VLESS [fi.podpiska.vip]",
+        "ARISTA🌐 - VLESS [160.187.111.222]",
+        "ARISTA🌐 - VLESS [160.187.111.222] (2)",
+        "ARISTA🌐 - VLESS [65.108.1.249]",
+        "ARISTA🌐 - VLESS [65.108.231.185]",
+        "ARISTA🌐 - VLESS [95.217.206.161]",
+        "ARISTA🌐 - VLESS [65.108.231.185] (2)",
+        "ARISTA🌐 - VLESS [65.108.1.249] (2)",
+        "ARISTA🌐 - VLESS [95.217.206.161] (2)",
+        "ARISTA🌐 - VLESS [65.108.1.249] (3)",
+        "ARISTA🌐 - VLESS [65.109.145.54]",
+        "ARISTA🌐 - VLESS [65.109.145.54] (2)",
+        "ARISTA🌐 - VLESS [65.108.231.185] (3)",
+        "ARISTA🌐 - VLESS [94.131.104.178]",
+        "ARISTA🌐 - VLESS [154.218.15.198]",
+        "ARISTA🌐 - VLESS [154.218.15.198] (2)",
+        "ARISTA🌐 - VLESS [27.50.48.102]",
+        "ARISTA🌐 - VLESS [27.50.48.102] (2)",
+        "ARISTA🌐 - VLESS [27.50.49.104]",
+        "ARISTA🌐 - VLESS [27.50.49.104] (2)",
+        "ARISTA🌐 - VLESS [62.60.233.30]",
+        "ARISTA🌐 - VLESS [62.133.63.138]",
+        "ARISTA🌐 - VLESS [83.222.23.113]",
+        "ARISTA🌐 - VLESS [104.21.36.57]",
+        "ARISTA🌐 - VLESS [ru.sfasti.ru]"
+      ],
+      "url": "http://www.gstatic.com/generate_204",
+      "interval": 300,
+      "tolerance": 150
+    }
+  ]
+}
