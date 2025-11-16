@@ -1,0 +1,2560 @@
+{
+    "mixed-port": 7890,
+    "ipv6": true,
+    "allow-lan": true,
+    "mode": "rule",
+    "log-level": "warning",
+    "disable-keep-alive": false,
+    "keep-alive-idle": 10,
+    "keep-alive-interval": 15,
+    "unified-delay": false,
+    "geo-auto-update": true,
+    "geo-update-interval": 168,
+    "external-controller": "127.0.0.1:9090",
+    "external-ui-url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
+    "external-ui": "ui",
+    "external-controller-cors": {
+        "allow-origins": [
+            "*"
+        ],
+        "allow-private-network": true
+    },
+    "profile": {
+        "store-selected": true,
+        "store-fake-ip": true
+    },
+    "dns": {
+        "enable": true,
+        "listen": "0.0.0.0:1053",
+        "ipv6": true,
+        "respect-rules": true,
+        "use-system-hosts": false,
+        "nameserver": [
+            "https://8.8.8.8/dns-query9.9.9.13,9.9.9.12,9.9.9.15,9.9.9.14,9.9.9.9,1.1.1.1,1.0.0.3,1.0.0.2,1.1.1.2,1.0.0.1,8.8.4.1,8.8.8.1,8.8.4.8,8.8.8.8,4.2.2.6#✅ Selector"
+        ],
+        "proxy-server-nameserver": [
+            "1.0.0.1#DIRECT"
+        ],
+        "nameserver-policy": {
+            "raw.githubusercontent.com": "1.0.0.1#DIRECT",
+            "time.apple.com": "1.0.0.1#DIRECT"
+        },
+        "hosts": {
+            "rule-set:malware": "127.0.0.1",
+            "rule-set:phishing": "127.0.0.1",
+            "rule-set:cryptominers": "127.0.0.1"
+        }
+    },
+    "tun": {
+        "enable": true,
+        "stack": "mixed",
+        "auto-route": true,
+        "strict-route": true,
+        "auto-detect-interface": true,
+        "dns-hijack": [
+            "any:53",
+            "tcp://any:53"
+        ],
+        "mtu": 9000
+    },
+    "sniffer": {
+        "enable": true,
+        "force-dns-mapping": true,
+        "parse-pure-ip": true,
+        "override-destination": false,
+        "sniff": {
+            "HTTP": {
+                "ports": [
+                    80,
+                    8080,
+                    8880,
+                    2052,
+                    2082,
+                    2086,
+                    2095
+                ]
+            },
+            "TLS": {
+                "ports": [
+                    443,
+                    8443,
+                    2053,
+                    2083,
+                    2087,
+                    2096
+                ]
+            }
+        }
+    },
+    "proxies": [
+        {
+            "name": "💦 1 - VLESS - Domain - 443",
+            "type": "vless",
+            "server": "almasi-bnb1101.pages.dev",
+            "port": 443,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/DDNNV2Q8n6R1Wy8Q",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "ALMAsi-BnB1101.pageS.DEv",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 2 - VLESS - Domain - 443",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "port": 443,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/VPQNyP7v6G9oKsf3",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "AlMASI-BNb1101.PageS.DEv",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 3 - VLESS - IPv4 - 443",
+            "type": "vless",
+            "server": "172.66.44.252",
+            "port": 443,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/5IE9Z25VT2TiFk6z",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "AlMaSi-BNb1101.PagES.DeV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 4 - VLESS - IPv4 - 443",
+            "type": "vless",
+            "server": "172.66.47.4",
+            "port": 443,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/nyBGFMlYzU73ZeWs",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "ALmASi-Bnb1101.pageS.dEV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 5 - VLESS - IPv6 - 443",
+            "type": "vless",
+            "server": "2606:4700:310c::ac42:2f04",
+            "port": 443,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/AploTYOmmVx5IL61",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "AlmasI-Bnb1101.PAgeS.deV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 6 - VLESS - IPv6 - 443",
+            "type": "vless",
+            "server": "2606:4700:310c::ac42:2cfc",
+            "port": 443,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/023QoQSmaXJW422E",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "aLmasI-bNb1101.pageS.deV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 7 - VLESS C - Domain - 443",
+            "type": "vless",
+            "server": "speedtest.com",
+            "port": 443,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/CbQ6iiFqCV4YF7lY",
+                "headers": {
+                    "Host": "speedtest.com"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "speedtest.com",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": true
+        },
+        {
+            "name": "💦 8 - VLESS - Domain - 8443",
+            "type": "vless",
+            "server": "almasi-bnb1101.pages.dev",
+            "port": 8443,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/k7Na7PfWQZNlYtdv",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "AlmASI-BnB1101.PAgeS.dEv",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 9 - VLESS - Domain - 8443",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "port": 8443,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/IvECCCS9rBl0i60v",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "aLmaSi-BNB1101.PaGeS.dEV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 10 - VLESS - IPv4 - 8443",
+            "type": "vless",
+            "server": "172.66.44.252",
+            "port": 8443,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/6hMYpM2YprYPwsCA",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "almASI-BNb1101.Pages.DeV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 11 - VLESS - IPv4 - 8443",
+            "type": "vless",
+            "server": "172.66.47.4",
+            "port": 8443,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/T0ygqczl1Sj0Cflo",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "alMaSi-bNB1101.pagEs.DEV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 12 - VLESS - IPv6 - 8443",
+            "type": "vless",
+            "server": "2606:4700:310c::ac42:2f04",
+            "port": 8443,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/mJFS4qbU8hYoUky9",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "ALMAsI-bNB1101.pagES.DeV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 13 - VLESS - IPv6 - 8443",
+            "type": "vless",
+            "server": "2606:4700:310c::ac42:2cfc",
+            "port": 8443,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/iXvwo7yzWRxlHfUn",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "aLMASi-BNb1101.pagES.dev",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 14 - VLESS C - Domain - 8443",
+            "type": "vless",
+            "server": "speedtest.com",
+            "port": 8443,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/ajutKyZPn3PuWmGc",
+                "headers": {
+                    "Host": "speedtest.com"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "speedtest.com",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": true
+        },
+        {
+            "name": "💦 15 - VLESS - Domain - 2053",
+            "type": "vless",
+            "server": "almasi-bnb1101.pages.dev",
+            "port": 2053,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/kWDxcVKGZ5GCC3Xw",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "AlmASI-bNB1101.PAgeS.DEv",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 16 - VLESS - Domain - 2053",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "port": 2053,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/NN1Fs42dv8hVxD8f",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "AlmasI-Bnb1101.PaGes.dEV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 17 - VLESS - IPv4 - 2053",
+            "type": "vless",
+            "server": "172.66.44.252",
+            "port": 2053,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/u60NWFFijfn5PUm5",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "aLMASI-BNb1101.PagES.dEV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 18 - VLESS - IPv4 - 2053",
+            "type": "vless",
+            "server": "172.66.47.4",
+            "port": 2053,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/uYIWjpQrzi0UkExj",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "alMASI-BnB1101.pagES.dEv",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 19 - VLESS - IPv6 - 2053",
+            "type": "vless",
+            "server": "2606:4700:310c::ac42:2f04",
+            "port": 2053,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/Dqi1hUa0YubC41FF",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "aLMaSi-bnb1101.PageS.DEV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 20 - VLESS - IPv6 - 2053",
+            "type": "vless",
+            "server": "2606:4700:310c::ac42:2cfc",
+            "port": 2053,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/10i3a1hOMMq2MuFK",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "aLmAsI-BNb1101.PAgES.DEv",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 21 - VLESS C - Domain - 2053",
+            "type": "vless",
+            "server": "speedtest.com",
+            "port": 2053,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/MebwtfSfP83iizLY",
+                "headers": {
+                    "Host": "speedtest.com"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "speedtest.com",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": true
+        },
+        {
+            "name": "💦 22 - VLESS - Domain - 2083",
+            "type": "vless",
+            "server": "almasi-bnb1101.pages.dev",
+            "port": 2083,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/CEqyI0UIhXYDcIsC",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "aLMASI-BnB1101.pagES.dev",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 23 - VLESS - Domain - 2083",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "port": 2083,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/xJTGkpqm5ywYMGsq",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "AlMASi-bnb1101.pAGeS.deV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 24 - VLESS - IPv4 - 2083",
+            "type": "vless",
+            "server": "172.66.44.252",
+            "port": 2083,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/lp8AqKlXSArVcRff",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "ALmasI-BNb1101.PAGeS.dEV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 25 - VLESS - IPv4 - 2083",
+            "type": "vless",
+            "server": "172.66.47.4",
+            "port": 2083,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/s9Q8bxRH9RAJTKeS",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "ALMasi-bnb1101.pAGeS.DEv",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 26 - VLESS - IPv6 - 2083",
+            "type": "vless",
+            "server": "2606:4700:310c::ac42:2f04",
+            "port": 2083,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/FXYSbx5ljkDtuZun",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "AlmaSi-Bnb1101.PAgEs.DeV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 27 - VLESS - IPv6 - 2083",
+            "type": "vless",
+            "server": "2606:4700:310c::ac42:2cfc",
+            "port": 2083,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/cNyfqu7kBMmaKqa5",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "ALmasi-Bnb1101.PaGeS.Dev",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 28 - VLESS C - Domain - 2083",
+            "type": "vless",
+            "server": "speedtest.com",
+            "port": 2083,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/jNT16KhoXS5Z6ohm",
+                "headers": {
+                    "Host": "speedtest.com"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "speedtest.com",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": true
+        },
+        {
+            "name": "💦 29 - VLESS - Domain - 2087",
+            "type": "vless",
+            "server": "almasi-bnb1101.pages.dev",
+            "port": 2087,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/9koNnA04zKDt4SD6",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "aLmAsI-bNb1101.pagEs.deV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 30 - VLESS - Domain - 2087",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "port": 2087,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/0VOuqa2gEa9F3AlZ",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "alMAsI-bnB1101.PAGes.dEV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 31 - VLESS - IPv4 - 2087",
+            "type": "vless",
+            "server": "172.66.44.252",
+            "port": 2087,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/lyfj1l6Du9ttZUFd",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "aLMAsi-BNb1101.pAges.deV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 32 - VLESS - IPv4 - 2087",
+            "type": "vless",
+            "server": "172.66.47.4",
+            "port": 2087,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/WfGdcOEU0t5MHCHh",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "ALmAsI-bNB1101.PaGES.DeV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 33 - VLESS - IPv6 - 2087",
+            "type": "vless",
+            "server": "2606:4700:310c::ac42:2f04",
+            "port": 2087,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/KKtSN8Xfo3GPkr0k",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "ALMasi-BNB1101.PAgES.dev",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 34 - VLESS - IPv6 - 2087",
+            "type": "vless",
+            "server": "2606:4700:310c::ac42:2cfc",
+            "port": 2087,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/NA618sNJlIf6BxtX",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "AlMAsi-bNb1101.PageS.deV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 35 - VLESS C - Domain - 2087",
+            "type": "vless",
+            "server": "speedtest.com",
+            "port": 2087,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/ll6mLd3lIHx7KDDN",
+                "headers": {
+                    "Host": "speedtest.com"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "speedtest.com",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": true
+        },
+        {
+            "name": "💦 36 - VLESS - Domain - 2096",
+            "type": "vless",
+            "server": "almasi-bnb1101.pages.dev",
+            "port": 2096,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/04m9O1NRrWgY1jrX",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "almASi-Bnb1101.paGEs.dev",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 37 - VLESS - Domain - 2096",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "port": 2096,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/ip4v9Q6ccZcnqOkr",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "AlMAsi-BNb1101.pageS.Dev",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 38 - VLESS - IPv4 - 2096",
+            "type": "vless",
+            "server": "172.66.44.252",
+            "port": 2096,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/KJ0esLZvRCPcMyRH",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "aLmaSI-bnB1101.pages.Dev",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 39 - VLESS - IPv4 - 2096",
+            "type": "vless",
+            "server": "172.66.47.4",
+            "port": 2096,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/nr0SVRWB5eNR1ROl",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "alMAsI-Bnb1101.paGES.DeV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 40 - VLESS - IPv6 - 2096",
+            "type": "vless",
+            "server": "2606:4700:310c::ac42:2f04",
+            "port": 2096,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/PSeZrR1CK1Fmjhyr",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "aLMASi-BNB1101.pages.Dev",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 41 - VLESS - IPv6 - 2096",
+            "type": "vless",
+            "server": "2606:4700:310c::ac42:2cfc",
+            "port": 2096,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/1t86RdWMLSPFZJOx",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "AlMASi-BNB1101.PAGEs.Dev",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 42 - VLESS C - Domain - 2096",
+            "type": "vless",
+            "server": "speedtest.com",
+            "port": 2096,
+            "uuid": "938ed666-6f5c-4491-863a-149804bada5a",
+            "packet-encoding": "packetaddr",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/AjwFXY5ZoqwxWCQ2",
+                "headers": {
+                    "Host": "speedtest.com"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "speedtest.com",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": true
+        },
+        {
+            "name": "💦 1 - Trojan - Domain - 443",
+            "type": "trojan",
+            "server": "almasi-bnb1101.pages.dev",
+            "port": 443,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/tr1jzHVoVBzon6mjB4",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "alMASi-bnb1101.paGes.dEV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 2 - Trojan - Domain - 443",
+            "type": "trojan",
+            "server": "www.speedtest.net",
+            "port": 443,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/tr9US0DSl2o8EYcI5Z",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "aLMaSi-BnB1101.PageS.Dev",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 3 - Trojan - IPv4 - 443",
+            "type": "trojan",
+            "server": "172.66.44.252",
+            "port": 443,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/truu1vwlkImC5wfkDv",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "aLmASi-bNB1101.PAgES.DEv",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 4 - Trojan - IPv4 - 443",
+            "type": "trojan",
+            "server": "172.66.47.4",
+            "port": 443,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trWnQLVdFyso51e79X",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "ALMasI-BNb1101.pAGES.deV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 5 - Trojan - IPv6 - 443",
+            "type": "trojan",
+            "server": "2606:4700:310c::ac42:2f04",
+            "port": 443,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trzYIlnPhvYYvlJWci",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "AlmAsI-bNB1101.paGES.DeV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 6 - Trojan - IPv6 - 443",
+            "type": "trojan",
+            "server": "2606:4700:310c::ac42:2cfc",
+            "port": 443,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trXThrRALow6uAOW7X",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "ALMASI-BnB1101.Pages.dev",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 7 - Trojan C - Domain - 443",
+            "type": "trojan",
+            "server": "speedtest.com",
+            "port": 443,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trj9mNO2R9HV1rt4xF",
+                "headers": {
+                    "Host": "speedtest.com"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "speedtest.com",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": true
+        },
+        {
+            "name": "💦 8 - Trojan - Domain - 8443",
+            "type": "trojan",
+            "server": "almasi-bnb1101.pages.dev",
+            "port": 8443,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/tryGjLvkKVLP5tQxOC",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "AlMasi-bnB1101.pages.dEV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 9 - Trojan - Domain - 8443",
+            "type": "trojan",
+            "server": "www.speedtest.net",
+            "port": 8443,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trmlPuVbsYLmCkD94V",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "AlMAsI-Bnb1101.pAGEs.dEV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 10 - Trojan - IPv4 - 8443",
+            "type": "trojan",
+            "server": "172.66.44.252",
+            "port": 8443,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trJB1aaq5FfkjQTzoh",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "ALMaSi-BNB1101.PaGES.dEV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 11 - Trojan - IPv4 - 8443",
+            "type": "trojan",
+            "server": "172.66.47.4",
+            "port": 8443,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trM8vurLMY4KNqip9q",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "almASI-bNb1101.Pages.deV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 12 - Trojan - IPv6 - 8443",
+            "type": "trojan",
+            "server": "2606:4700:310c::ac42:2f04",
+            "port": 8443,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trY9JdDAMc418GwuBB",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "almaSI-BNb1101.PAGEs.DEv",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 13 - Trojan - IPv6 - 8443",
+            "type": "trojan",
+            "server": "2606:4700:310c::ac42:2cfc",
+            "port": 8443,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trWyR2WdDa1FG3lOcw",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "AlMASI-BNB1101.pAgeS.dEv",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 14 - Trojan C - Domain - 8443",
+            "type": "trojan",
+            "server": "speedtest.com",
+            "port": 8443,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trtMifzLhwA6sKywz8",
+                "headers": {
+                    "Host": "speedtest.com"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "speedtest.com",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": true
+        },
+        {
+            "name": "💦 15 - Trojan - Domain - 2053",
+            "type": "trojan",
+            "server": "almasi-bnb1101.pages.dev",
+            "port": 2053,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trdxX1TsACP616ViBj",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "AlmAsI-BNb1101.PagEs.dev",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 16 - Trojan - Domain - 2053",
+            "type": "trojan",
+            "server": "www.speedtest.net",
+            "port": 2053,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/tracmfPls4P61iSZg7",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "aLmaSI-bNB1101.PaGeS.DEV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 17 - Trojan - IPv4 - 2053",
+            "type": "trojan",
+            "server": "172.66.44.252",
+            "port": 2053,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trM4Ttix5W3ut2DsES",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "aLmaSi-Bnb1101.PageS.DEV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 18 - Trojan - IPv4 - 2053",
+            "type": "trojan",
+            "server": "172.66.47.4",
+            "port": 2053,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trcj9XVNOTFHsgqkyn",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "AlmASi-Bnb1101.pagEs.deV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 19 - Trojan - IPv6 - 2053",
+            "type": "trojan",
+            "server": "2606:4700:310c::ac42:2f04",
+            "port": 2053,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trBA1lsyrxh6KN1Bze",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "ALMASi-bnb1101.PaGEs.dEv",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 20 - Trojan - IPv6 - 2053",
+            "type": "trojan",
+            "server": "2606:4700:310c::ac42:2cfc",
+            "port": 2053,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trHBug5yIcRUQplLqz",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "alMasi-bnb1101.paGes.Dev",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 21 - Trojan C - Domain - 2053",
+            "type": "trojan",
+            "server": "speedtest.com",
+            "port": 2053,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trVYVw0Q1rANcJHEyf",
+                "headers": {
+                    "Host": "speedtest.com"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "speedtest.com",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": true
+        },
+        {
+            "name": "💦 22 - Trojan - Domain - 2083",
+            "type": "trojan",
+            "server": "almasi-bnb1101.pages.dev",
+            "port": 2083,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/tr8hF8ZQ0Uo3402bat",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "aLmAsi-BNb1101.pages.dev",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 23 - Trojan - Domain - 2083",
+            "type": "trojan",
+            "server": "www.speedtest.net",
+            "port": 2083,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trT7O5AB97EcFyMTVe",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "aLmASi-BnB1101.pAGES.DeV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 24 - Trojan - IPv4 - 2083",
+            "type": "trojan",
+            "server": "172.66.44.252",
+            "port": 2083,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trjdxx5L03F7T69bCr",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "ALmaSI-bnb1101.paGES.dev",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 25 - Trojan - IPv4 - 2083",
+            "type": "trojan",
+            "server": "172.66.47.4",
+            "port": 2083,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trbOHBEdCPRRypKIvg",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "aLmAsi-bnb1101.paGES.dev",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 26 - Trojan - IPv6 - 2083",
+            "type": "trojan",
+            "server": "2606:4700:310c::ac42:2f04",
+            "port": 2083,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trT5sG7g2PLOpueVTX",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "AlmaSi-Bnb1101.PagEs.DEV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 27 - Trojan - IPv6 - 2083",
+            "type": "trojan",
+            "server": "2606:4700:310c::ac42:2cfc",
+            "port": 2083,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trI1nXyDSZmZ5knBE0",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "ALMasI-BNb1101.PagEs.Dev",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 28 - Trojan C - Domain - 2083",
+            "type": "trojan",
+            "server": "speedtest.com",
+            "port": 2083,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trbao9g6PPD6TqWit2",
+                "headers": {
+                    "Host": "speedtest.com"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "speedtest.com",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": true
+        },
+        {
+            "name": "💦 29 - Trojan - Domain - 2087",
+            "type": "trojan",
+            "server": "almasi-bnb1101.pages.dev",
+            "port": 2087,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trK6m4pyOQZwS86T0I",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "ALMasI-bnb1101.paGes.deV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 30 - Trojan - Domain - 2087",
+            "type": "trojan",
+            "server": "www.speedtest.net",
+            "port": 2087,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/truuyzoJhKWEsiQDRk",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "AlMAsI-Bnb1101.PAGeS.dEv",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 31 - Trojan - IPv4 - 2087",
+            "type": "trojan",
+            "server": "172.66.44.252",
+            "port": 2087,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trWjuh8YXkeIajeR3T",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "ALMAsI-Bnb1101.PAGEs.Dev",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 32 - Trojan - IPv4 - 2087",
+            "type": "trojan",
+            "server": "172.66.47.4",
+            "port": 2087,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trcOlxAKlohHMEcEXo",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "AlmasI-bnb1101.paGEs.dEV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 33 - Trojan - IPv6 - 2087",
+            "type": "trojan",
+            "server": "2606:4700:310c::ac42:2f04",
+            "port": 2087,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trbbSX7O1lrrNzcwwk",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "aLMaSi-bNB1101.PagEs.dEv",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 34 - Trojan - IPv6 - 2087",
+            "type": "trojan",
+            "server": "2606:4700:310c::ac42:2cfc",
+            "port": 2087,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trRY00Axd6cgBHOsbp",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "ALmAsi-BNB1101.PagES.dEV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 35 - Trojan C - Domain - 2087",
+            "type": "trojan",
+            "server": "speedtest.com",
+            "port": 2087,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trLZDEgJQzfIgtDsRG",
+                "headers": {
+                    "Host": "speedtest.com"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "speedtest.com",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": true
+        },
+        {
+            "name": "💦 36 - Trojan - Domain - 2096",
+            "type": "trojan",
+            "server": "almasi-bnb1101.pages.dev",
+            "port": 2096,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trtk3ARLR9WQgD6U4b",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "alMAsI-bNB1101.pAGes.dev",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 37 - Trojan - Domain - 2096",
+            "type": "trojan",
+            "server": "www.speedtest.net",
+            "port": 2096,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trW55CFDb8UMQOqMJj",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "aLMASi-Bnb1101.PAGeS.dEv",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 38 - Trojan - IPv4 - 2096",
+            "type": "trojan",
+            "server": "172.66.44.252",
+            "port": 2096,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/troKT1mjFIXO3WgEr7",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "almasi-bnb1101.PagEs.deV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 39 - Trojan - IPv4 - 2096",
+            "type": "trojan",
+            "server": "172.66.47.4",
+            "port": 2096,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/tr5gsGmbJzQi9sLE6S",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "ALMASI-bnb1101.PAGeS.dev",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 40 - Trojan - IPv6 - 2096",
+            "type": "trojan",
+            "server": "2606:4700:310c::ac42:2f04",
+            "port": 2096,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trJ4MBUBKIg23TTsiI",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "alMASI-bnB1101.Pages.dEV",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 41 - Trojan - IPv6 - 2096",
+            "type": "trojan",
+            "server": "2606:4700:310c::ac42:2cfc",
+            "port": 2096,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trHxKQrP6YXpqlhSi8",
+                "headers": {
+                    "Host": "almasi-bnb1101.pages.dev"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "aLMasi-BNb1101.PAGEs.dEv",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 42 - Trojan C - Domain - 2096",
+            "type": "trojan",
+            "server": "speedtest.com",
+            "port": 2096,
+            "password": "Akbar.9090",
+            "ip-version": "dual",
+            "tls": true,
+            "network": "ws",
+            "tfo": true,
+            "mptcp": true,
+            "ws-opts": {
+                "path": "/trx8LUWyZf3ABDkvuU",
+                "headers": {
+                    "Host": "speedtest.com"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "speedtest.com",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": true
+        }
+    ],
+    "proxy-groups": [
+        {
+            "name": "✅ Selector",
+            "type": "select",
+            "proxies": [
+                "💦 Best Ping 💥",
+                "💦 1 - VLESS - Domain - 443",
+                "💦 2 - VLESS - Domain - 443",
+                "💦 3 - VLESS - IPv4 - 443",
+                "💦 4 - VLESS - IPv4 - 443",
+                "💦 5 - VLESS - IPv6 - 443",
+                "💦 6 - VLESS - IPv6 - 443",
+                "💦 7 - VLESS C - Domain - 443",
+                "💦 8 - VLESS - Domain - 8443",
+                "💦 9 - VLESS - Domain - 8443",
+                "💦 10 - VLESS - IPv4 - 8443",
+                "💦 11 - VLESS - IPv4 - 8443",
+                "💦 12 - VLESS - IPv6 - 8443",
+                "💦 13 - VLESS - IPv6 - 8443",
+                "💦 14 - VLESS C - Domain - 8443",
+                "💦 15 - VLESS - Domain - 2053",
+                "💦 16 - VLESS - Domain - 2053",
+                "💦 17 - VLESS - IPv4 - 2053",
+                "💦 18 - VLESS - IPv4 - 2053",
+                "💦 19 - VLESS - IPv6 - 2053",
+                "💦 20 - VLESS - IPv6 - 2053",
+                "💦 21 - VLESS C - Domain - 2053",
+                "💦 22 - VLESS - Domain - 2083",
+                "💦 23 - VLESS - Domain - 2083",
+                "💦 24 - VLESS - IPv4 - 2083",
+                "💦 25 - VLESS - IPv4 - 2083",
+                "💦 26 - VLESS - IPv6 - 2083",
+                "💦 27 - VLESS - IPv6 - 2083",
+                "💦 28 - VLESS C - Domain - 2083",
+                "💦 29 - VLESS - Domain - 2087",
+                "💦 30 - VLESS - Domain - 2087",
+                "💦 31 - VLESS - IPv4 - 2087",
+                "💦 32 - VLESS - IPv4 - 2087",
+                "💦 33 - VLESS - IPv6 - 2087",
+                "💦 34 - VLESS - IPv6 - 2087",
+                "💦 35 - VLESS C - Domain - 2087",
+                "💦 36 - VLESS - Domain - 2096",
+                "💦 37 - VLESS - Domain - 2096",
+                "💦 38 - VLESS - IPv4 - 2096",
+                "💦 39 - VLESS - IPv4 - 2096",
+                "💦 40 - VLESS - IPv6 - 2096",
+                "💦 41 - VLESS - IPv6 - 2096",
+                "💦 42 - VLESS C - Domain - 2096",
+                "💦 1 - Trojan - Domain - 443",
+                "💦 2 - Trojan - Domain - 443",
+                "💦 3 - Trojan - IPv4 - 443",
+                "💦 4 - Trojan - IPv4 - 443",
+                "💦 5 - Trojan - IPv6 - 443",
+                "💦 6 - Trojan - IPv6 - 443",
+                "💦 7 - Trojan C - Domain - 443",
+                "💦 8 - Trojan - Domain - 8443",
+                "💦 9 - Trojan - Domain - 8443",
+                "💦 10 - Trojan - IPv4 - 8443",
+                "💦 11 - Trojan - IPv4 - 8443",
+                "💦 12 - Trojan - IPv6 - 8443",
+                "💦 13 - Trojan - IPv6 - 8443",
+                "💦 14 - Trojan C - Domain - 8443",
+                "💦 15 - Trojan - Domain - 2053",
+                "💦 16 - Trojan - Domain - 2053",
+                "💦 17 - Trojan - IPv4 - 2053",
+                "💦 18 - Trojan - IPv4 - 2053",
+                "💦 19 - Trojan - IPv6 - 2053",
+                "💦 20 - Trojan - IPv6 - 2053",
+                "💦 21 - Trojan C - Domain - 2053",
+                "💦 22 - Trojan - Domain - 2083",
+                "💦 23 - Trojan - Domain - 2083",
+                "💦 24 - Trojan - IPv4 - 2083",
+                "💦 25 - Trojan - IPv4 - 2083",
+                "💦 26 - Trojan - IPv6 - 2083",
+                "💦 27 - Trojan - IPv6 - 2083",
+                "💦 28 - Trojan C - Domain - 2083",
+                "💦 29 - Trojan - Domain - 2087",
+                "💦 30 - Trojan - Domain - 2087",
+                "💦 31 - Trojan - IPv4 - 2087",
+                "💦 32 - Trojan - IPv4 - 2087",
+                "💦 33 - Trojan - IPv6 - 2087",
+                "💦 34 - Trojan - IPv6 - 2087",
+                "💦 35 - Trojan C - Domain - 2087",
+                "💦 36 - Trojan - Domain - 2096",
+                "💦 37 - Trojan - Domain - 2096",
+                "💦 38 - Trojan - IPv4 - 2096",
+                "💦 39 - Trojan - IPv4 - 2096",
+                "💦 40 - Trojan - IPv6 - 2096",
+                "💦 41 - Trojan - IPv6 - 2096",
+                "💦 42 - Trojan C - Domain - 2096"
+            ]
+        },
+        {
+            "name": "💦 Best Ping 💥",
+            "type": "url-test",
+            "url": "https://www.gstatic.com/generate_204",
+            "interval": 30,
+            "tolerance": 50,
+            "proxies": [
+                "💦 1 - VLESS - Domain - 443",
+                "💦 2 - VLESS - Domain - 443",
+                "💦 3 - VLESS - IPv4 - 443",
+                "💦 4 - VLESS - IPv4 - 443",
+                "💦 5 - VLESS - IPv6 - 443",
+                "💦 6 - VLESS - IPv6 - 443",
+                "💦 7 - VLESS C - Domain - 443",
+                "💦 8 - VLESS - Domain - 8443",
+                "💦 9 - VLESS - Domain - 8443",
+                "💦 10 - VLESS - IPv4 - 8443",
+                "💦 11 - VLESS - IPv4 - 8443",
+                "💦 12 - VLESS - IPv6 - 8443",
+                "💦 13 - VLESS - IPv6 - 8443",
+                "💦 14 - VLESS C - Domain - 8443",
+                "💦 15 - VLESS - Domain - 2053",
+                "💦 16 - VLESS - Domain - 2053",
+                "💦 17 - VLESS - IPv4 - 2053",
+                "💦 18 - VLESS - IPv4 - 2053",
+                "💦 19 - VLESS - IPv6 - 2053",
+                "💦 20 - VLESS - IPv6 - 2053",
+                "💦 21 - VLESS C - Domain - 2053",
+                "💦 22 - VLESS - Domain - 2083",
+                "💦 23 - VLESS - Domain - 2083",
+                "💦 24 - VLESS - IPv4 - 2083",
+                "💦 25 - VLESS - IPv4 - 2083",
+                "💦 26 - VLESS - IPv6 - 2083",
+                "💦 27 - VLESS - IPv6 - 2083",
+                "💦 28 - VLESS C - Domain - 2083",
+                "💦 29 - VLESS - Domain - 2087",
+                "💦 30 - VLESS - Domain - 2087",
+                "💦 31 - VLESS - IPv4 - 2087",
+                "💦 32 - VLESS - IPv4 - 2087",
+                "💦 33 - VLESS - IPv6 - 2087",
+                "💦 34 - VLESS - IPv6 - 2087",
+                "💦 35 - VLESS C - Domain - 2087",
+                "💦 36 - VLESS - Domain - 2096",
+                "💦 37 - VLESS - Domain - 2096",
+                "💦 38 - VLESS - IPv4 - 2096",
+                "💦 39 - VLESS - IPv4 - 2096",
+                "💦 40 - VLESS - IPv6 - 2096",
+                "💦 41 - VLESS - IPv6 - 2096",
+                "💦 42 - VLESS C - Domain - 2096",
+                "💦 1 - Trojan - Domain - 443",
+                "💦 2 - Trojan - Domain - 443",
+                "💦 3 - Trojan - IPv4 - 443",
+                "💦 4 - Trojan - IPv4 - 443",
+                "💦 5 - Trojan - IPv6 - 443",
+                "💦 6 - Trojan - IPv6 - 443",
+                "💦 7 - Trojan C - Domain - 443",
+                "💦 8 - Trojan - Domain - 8443",
+                "💦 9 - Trojan - Domain - 8443",
+                "💦 10 - Trojan - IPv4 - 8443",
+                "💦 11 - Trojan - IPv4 - 8443",
+                "💦 12 - Trojan - IPv6 - 8443",
+                "💦 13 - Trojan - IPv6 - 8443",
+                "💦 14 - Trojan C - Domain - 8443",
+                "💦 15 - Trojan - Domain - 2053",
+                "💦 16 - Trojan - Domain - 2053",
+                "💦 17 - Trojan - IPv4 - 2053",
+                "💦 18 - Trojan - IPv4 - 2053",
+                "💦 19 - Trojan - IPv6 - 2053",
+                "💦 20 - Trojan - IPv6 - 2053",
+                "💦 21 - Trojan C - Domain - 2053",
+                "💦 22 - Trojan - Domain - 2083",
+                "💦 23 - Trojan - Domain - 2083",
+                "💦 24 - Trojan - IPv4 - 2083",
+                "💦 25 - Trojan - IPv4 - 2083",
+                "💦 26 - Trojan - IPv6 - 2083",
+                "💦 27 - Trojan - IPv6 - 2083",
+                "💦 28 - Trojan C - Domain - 2083",
+                "💦 29 - Trojan - Domain - 2087",
+                "💦 30 - Trojan - Domain - 2087",
+                "💦 31 - Trojan - IPv4 - 2087",
+                "💦 32 - Trojan - IPv4 - 2087",
+                "💦 33 - Trojan - IPv6 - 2087",
+                "💦 34 - Trojan - IPv6 - 2087",
+                "💦 35 - Trojan C - Domain - 2087",
+                "💦 36 - Trojan - Domain - 2096",
+                "💦 37 - Trojan - Domain - 2096",
+                "💦 38 - Trojan - IPv4 - 2096",
+                "💦 39 - Trojan - IPv4 - 2096",
+                "💦 40 - Trojan - IPv6 - 2096",
+                "💦 41 - Trojan - IPv6 - 2096",
+                "💦 42 - Trojan C - Domain - 2096"
+            ]
+        }
+    ],
+    "rule-providers": {
+        "malware": {
+            "type": "http",
+            "format": "text",
+            "behavior": "domain",
+            "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/malware.txt",
+            "path": "./ruleset/malware.txt",
+            "interval": 86400
+        },
+        "malware-cidr": {
+            "type": "http",
+            "format": "text",
+            "behavior": "ipcidr",
+            "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/malware-ip.txt",
+            "path": "./ruleset/malware-cidr.txt",
+            "interval": 86400
+        },
+        "phishing": {
+            "type": "http",
+            "format": "text",
+            "behavior": "domain",
+            "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/phishing.txt",
+            "path": "./ruleset/phishing.txt",
+            "interval": 86400
+        },
+        "phishing-cidr": {
+            "type": "http",
+            "format": "text",
+            "behavior": "ipcidr",
+            "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/phishing-ip.txt",
+            "path": "./ruleset/phishing-cidr.txt",
+            "interval": 86400
+        },
+        "cryptominers": {
+            "type": "http",
+            "format": "text",
+            "behavior": "domain",
+            "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/cryptominers.txt",
+            "path": "./ruleset/cryptominers.txt",
+            "interval": 86400
+        }
+    },
+    "rules": [
+        "NETWORK,udp,REJECT",
+        "RULE-SET,malware,REJECT",
+        "RULE-SET,phishing,REJECT",
+        "RULE-SET,cryptominers,REJECT",
+        "RULE-SET,malware-cidr,REJECT",
+        "RULE-SET,phishing-cidr,REJECT",
+        "MATCH,✅ Selector"
+    ],
+    "ntp": {
+        "enable": true,
+        "server": "time.cloudflare.com",
+        "port": 123,
+        "interval": 30
+    }
+}
