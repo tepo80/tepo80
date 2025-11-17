@@ -1,0 +1,459 @@
+{
+    "mixed-port": 7890,
+    "ipv6": true,
+    "allow-lan": false,
+    "unified-delay": false,
+    "log-level": "warning",
+    "mode": "rule",
+    "disable-keep-alive": false,
+    "keep-alive-idle": 10,
+    "keep-alive-interval": 15,
+    "tcp-concurrent": true,
+    "geo-auto-update": true,
+    "geo-update-interval": 168,
+    "external-controller": "127.0.0.1:9090",
+    "external-controller-cors": {
+        "allow-origins": [
+            "*"
+        ],
+        "allow-private-network": true
+    },
+    "external-ui": "ui",
+    "external-ui-url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
+    "profile": {
+        "store-selected": true,
+        "store-fake-ip": true
+    },
+    "dns": {
+        "enable": true,
+        "respect-rules": true,
+        "use-system-hosts": false,
+        "listen": "127.0.0.1:1053",
+        "ipv6": true,
+        "nameserver": [
+            "https://8.8.8.8/dns-query#✅ Selector"
+        ],
+        "proxy-server-nameserver": [
+            "8.8.8.8#DIRECT"
+        ],
+        "direct-nameserver": [
+            "8.8.8.8#DIRECT"
+        ],
+        "direct-nameserver-follow-policy": true,
+        "enhanced-mode": "redir-host"
+    },
+    "tun": {
+        "enable": true,
+        "stack": "mixed",
+        "auto-route": true,
+        "strict-route": true,
+        "auto-detect-interface": true,
+        "dns-hijack": [
+            "any:53",
+            "tcp://any:53"
+        ],
+        "mtu": 9000
+    },
+    "sniffer": {
+        "enable": true,
+        "force-dns-mapping": true,
+        "parse-pure-ip": true,
+        "override-destination": true,
+        "sniff": {
+            "HTTP": {
+                "ports": [
+                    80,
+                    8080,
+                    8880,
+                    2052,
+                    2082,
+                    2086,
+                    2095
+                ]
+            },
+            "TLS": {
+                "ports": [
+                    443,
+                    8443,
+                    2053,
+                    2083,
+                    2087,
+                    2096
+                ]
+            }
+        }
+    },
+    "proxies": [
+        {
+            "name": "💦 1 - VLESS - Domain : 443",
+            "type": "vless",
+            "server": "almasi98.ahsan-tepo20.workers.dev",
+            "port": 443,
+            "ip-version": "ipv4-prefer",
+            "tfo": false,
+            "udp": false,
+            "uuid": "78da4d15-1877-4aeb-97d3-7c7c3c95c1a8",
+            "packet-encoding": "",
+            "tls": true,
+            "servername": "almASi98.AHSAN-tepO20.wORKers.deV",
+            "client-fingerprint": "chrome",
+            "skip-cert-verify": false,
+            "alpn": [
+                "http/1.1"
+            ],
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoiRkpCb2ZJazA1eiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "almasi98.ahsan-tepo20.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 2 - VLESS - Domain : 443",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "port": 443,
+            "ip-version": "ipv4-prefer",
+            "tfo": false,
+            "udp": false,
+            "uuid": "78da4d15-1877-4aeb-97d3-7c7c3c95c1a8",
+            "packet-encoding": "",
+            "tls": true,
+            "servername": "almAsI98.aHSaN-TEPO20.wORkeRS.dEV",
+            "client-fingerprint": "chrome",
+            "skip-cert-verify": false,
+            "alpn": [
+                "http/1.1"
+            ],
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoiaEtvcnZVV3VHOHc4SG9QMiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "almasi98.ahsan-tepo20.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 3 - VLESS - IPv4 : 443",
+            "type": "vless",
+            "server": "172.67.204.193",
+            "port": 443,
+            "ip-version": "ipv4-prefer",
+            "tfo": false,
+            "udp": false,
+            "uuid": "78da4d15-1877-4aeb-97d3-7c7c3c95c1a8",
+            "packet-encoding": "",
+            "tls": true,
+            "servername": "AlMaSI98.AHsAN-tEpO20.woRKerS.DeV",
+            "client-fingerprint": "chrome",
+            "skip-cert-verify": false,
+            "alpn": [
+                "http/1.1"
+            ],
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoiOVFDTXZxTzd5U1dGYSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "almasi98.ahsan-tepo20.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 4 - VLESS - IPv4 : 443",
+            "type": "vless",
+            "server": "104.21.44.230",
+            "port": 443,
+            "ip-version": "ipv4-prefer",
+            "tfo": false,
+            "udp": false,
+            "uuid": "78da4d15-1877-4aeb-97d3-7c7c3c95c1a8",
+            "packet-encoding": "",
+            "tls": true,
+            "servername": "ALMasi98.aHSAn-tepo20.worKeRS.DEv",
+            "client-fingerprint": "chrome",
+            "skip-cert-verify": false,
+            "alpn": [
+                "http/1.1"
+            ],
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoic1FMREh4RDdnIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "almasi98.ahsan-tepo20.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 5 - VLESS - IPv6 : 443",
+            "type": "vless",
+            "server": "2606:4700:3031::ac43:ccc1",
+            "port": 443,
+            "ip-version": "ipv4-prefer",
+            "tfo": false,
+            "udp": false,
+            "uuid": "78da4d15-1877-4aeb-97d3-7c7c3c95c1a8",
+            "packet-encoding": "",
+            "tls": true,
+            "servername": "aLMaSi98.ahSAn-tePO20.WoRKErs.DeV",
+            "client-fingerprint": "chrome",
+            "skip-cert-verify": false,
+            "alpn": [
+                "http/1.1"
+            ],
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoibjg4RmppYzQ2M2VsIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "almasi98.ahsan-tepo20.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 6 - VLESS - IPv6 : 443",
+            "type": "vless",
+            "server": "2606:4700:3037::6815:2ce6",
+            "port": 443,
+            "ip-version": "ipv4-prefer",
+            "tfo": false,
+            "udp": false,
+            "uuid": "78da4d15-1877-4aeb-97d3-7c7c3c95c1a8",
+            "packet-encoding": "",
+            "tls": true,
+            "servername": "aLMASI98.AhSaN-tePo20.woRkErs.dEv",
+            "client-fingerprint": "chrome",
+            "skip-cert-verify": false,
+            "alpn": [
+                "http/1.1"
+            ],
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoiWGloUDlUTllzWHFxVUpvIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "almasi98.ahsan-tepo20.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 1 - Trojan - Domain : 443",
+            "type": "trojan",
+            "server": "almasi98.ahsan-tepo20.workers.dev",
+            "port": 443,
+            "ip-version": "ipv4-prefer",
+            "tfo": false,
+            "udp": false,
+            "password": "15601560",
+            "tls": true,
+            "sni": "ALmaSi98.ahSan-TEPo20.WoRkeRS.dEV",
+            "client-fingerprint": "chrome",
+            "skip-cert-verify": false,
+            "alpn": [
+                "http/1.1"
+            ],
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoiTW1CTFQ0N0NvIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "almasi98.ahsan-tepo20.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 2 - Trojan - Domain : 443",
+            "type": "trojan",
+            "server": "www.speedtest.net",
+            "port": 443,
+            "ip-version": "ipv4-prefer",
+            "tfo": false,
+            "udp": false,
+            "password": "15601560",
+            "tls": true,
+            "sni": "almasI98.ahSan-tEpO20.worKERS.Dev",
+            "client-fingerprint": "chrome",
+            "skip-cert-verify": false,
+            "alpn": [
+                "http/1.1"
+            ],
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoiZmNsSmY3azdSOVMiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "almasi98.ahsan-tepo20.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 3 - Trojan - IPv4 : 443",
+            "type": "trojan",
+            "server": "172.67.204.193",
+            "port": 443,
+            "ip-version": "ipv4-prefer",
+            "tfo": false,
+            "udp": false,
+            "password": "15601560",
+            "tls": true,
+            "sni": "aLmAsI98.AHSaN-TePO20.WOrkERs.DEV",
+            "client-fingerprint": "chrome",
+            "skip-cert-verify": false,
+            "alpn": [
+                "http/1.1"
+            ],
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoiVlhyQjE1N3N3UDgiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "almasi98.ahsan-tepo20.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 4 - Trojan - IPv4 : 443",
+            "type": "trojan",
+            "server": "104.21.44.230",
+            "port": 443,
+            "ip-version": "ipv4-prefer",
+            "tfo": false,
+            "udp": false,
+            "password": "15601560",
+            "tls": true,
+            "sni": "ALmASI98.AHsAN-tEPo20.WorkeRs.DEv",
+            "client-fingerprint": "chrome",
+            "skip-cert-verify": false,
+            "alpn": [
+                "http/1.1"
+            ],
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoidWMyeVVZZGxtQWd0dyIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "almasi98.ahsan-tepo20.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 5 - Trojan - IPv6 : 443",
+            "type": "trojan",
+            "server": "2606:4700:3031::ac43:ccc1",
+            "port": 443,
+            "ip-version": "ipv4-prefer",
+            "tfo": false,
+            "udp": false,
+            "password": "15601560",
+            "tls": true,
+            "sni": "aLmaSI98.ahsaN-tEPO20.workERS.dEv",
+            "client-fingerprint": "chrome",
+            "skip-cert-verify": false,
+            "alpn": [
+                "http/1.1"
+            ],
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoiS2lvWDN5bDF0OCIsInByb3RvY29sIjoidHIiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "almasi98.ahsan-tepo20.workers.dev"
+                }
+            }
+        },
+        {
+            "name": "💦 6 - Trojan - IPv6 : 443",
+            "type": "trojan",
+            "server": "2606:4700:3037::6815:2ce6",
+            "port": 443,
+            "ip-version": "ipv4-prefer",
+            "tfo": false,
+            "udp": false,
+            "password": "15601560",
+            "tls": true,
+            "sni": "aLmasI98.aHsAn-tEPo20.woRKERS.dEV",
+            "client-fingerprint": "chrome",
+            "skip-cert-verify": false,
+            "alpn": [
+                "http/1.1"
+            ],
+            "network": "ws",
+            "ws-opts": {
+                "path": "/eyJqdW5rIjoiTXdyZG16OXJkbFVGIiwicHJvdG9jb2wiOiJ0ciIsIm1vZGUiOiJwcm94eWlwIiwicGFuZWxJUHMiOltdfQ==",
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol",
+                "headers": {
+                    "Host": "almasi98.ahsan-tepo20.workers.dev"
+                }
+            }
+        }
+    ],
+    "proxy-groups": [
+        {
+            "name": "✅ Selector",
+            "type": "select",
+            "proxies": [
+                "💦 Best Ping 🚀",
+                "💦 1 - VLESS - Domain : 443",
+                "💦 2 - VLESS - Domain : 443",
+                "💦 3 - VLESS - IPv4 : 443",
+                "💦 4 - VLESS - IPv4 : 443",
+                "💦 5 - VLESS - IPv6 : 443",
+                "💦 6 - VLESS - IPv6 : 443",
+                "💦 1 - Trojan - Domain : 443",
+                "💦 2 - Trojan - Domain : 443",
+                "💦 3 - Trojan - IPv4 : 443",
+                "💦 4 - Trojan - IPv4 : 443",
+                "💦 5 - Trojan - IPv6 : 443",
+                "💦 6 - Trojan - IPv6 : 443"
+            ]
+        },
+        {
+            "name": "💦 Best Ping 🚀",
+            "type": "url-test",
+            "proxies": [
+                "💦 1 - VLESS - Domain : 443",
+                "💦 2 - VLESS - Domain : 443",
+                "💦 3 - VLESS - IPv4 : 443",
+                "💦 4 - VLESS - IPv4 : 443",
+                "💦 5 - VLESS - IPv6 : 443",
+                "💦 6 - VLESS - IPv6 : 443",
+                "💦 1 - Trojan - Domain : 443",
+                "💦 2 - Trojan - Domain : 443",
+                "💦 3 - Trojan - IPv4 : 443",
+                "💦 4 - Trojan - IPv4 : 443",
+                "💦 5 - Trojan - IPv6 : 443",
+                "💦 6 - Trojan - IPv6 : 443"
+            ],
+            "url": "https://www.gstatic.com/generate_204",
+            "interval": 30,
+            "tolerance": 50
+        }
+    ],
+    "rules": [
+        "GEOIP,lan,DIRECT,no-resolve",
+        "NETWORK,udp,REJECT",
+        "MATCH,✅ Selector"
+    ],
+    "ntp": {
+        "enable": true,
+        "server": "time.cloudflare.com",
+        "port": 123,
+        "interval": 30
+    }
+}
