@@ -16,15 +16,30 @@ TEXT_PATH = "normal2.txt"
 FIN_PATH = "final2.txt"
 
 LINKS_PATH = [
- "https://raw.githubusercontent.com/hamedp-71/Sub_Checker_Creator/refs/heads/main/final.txt"
-  "https://raw.githubusercontent.com/hamedp-71/Trojan/refs/heads/main/hp.txt" 
-  "https://zaya.link/Arista_HP_Final"
-  "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/main/Splitted-By-Protocol/ss.txt"
-  "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/main/Splitted-By-Protocol/vmess.txt"
-  "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/main/Splitted-By-Protocol/vless.txt"
-   "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/main/Splitted-By-Protocol/hy2.txt"
-   "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/main/Splitted-By-Protocol/trojan.txt"
-   "https://raw.githubusercontent.com/tepo80/tepo80/main/ss.txt",
+ 
+    "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/refs/heads/main/Sub1.txt",
+    "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/refs/heads/main/Sub.txt",
+    "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/refs/heads/main/Sub2.txt",
+    "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/refs/heads/main/Sub3.txt",
+    "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/refs/heads/main/Sub4.txt",
+    "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/refs/heads/main/Sub5.txt",
+    "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/refs/heads/main/Sub6.txt",
+    "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/refs/heads/main/Sub7.txt",
+    "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/refs/heads/main/Sub8.txt",
+    "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/refs/heads/main/Sub9.txt",
+    "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/refs/heads/main/Sub10.txt",
+    "https://raw.githubusercontent.com/hamedp-71/Trojan/refs/heads/main/hp.txt",
+    "https://raw.githubusercontent.com/hamedp-71/Arista_HP/refs/heads/main/Arista.txt",
+    "https://raw.githubusercontent.com/hamedp-71/TVC/refs/heads/main/config.txt",
+    "https://raw.githubusercontent.com/hamedp-71/Sub_Checker_Creator/refs/heads/main/final.txt",
+    "https://raw.githubusercontent.com/hamedp-71/Trojan/refs/heads/main/hp.txt", 
+    "https://zaya.link/Arista_HP_Final",
+    "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/main/Splitted-By-Protocol/ss.txt",
+    "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/main/Splitted-By-Protocol/vmess.txt",
+    "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/main/Splitted-By-Protocol/vless.txt",
+    "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/main/Splitted-By-Protocol/hy2.txt",
+    "https://raw.githubusercontent.com/hamedp-71/v2go_NEW/main/Splitted-By-Protocol/trojan.txt",
+    "https://raw.githubusercontent.com/tepo80/tepo80/main/ss.txt",
     "https://raw.githubusercontent.com/tepo80/tepo80/main/vless.txt",
     "https://raw.githubusercontent.com/tepo80/tepo80/main/h2.txt",
     "https://raw.githubusercontent.com/tepo80/tepo80/main/trojan.txt",
