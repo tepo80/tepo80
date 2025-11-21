@@ -1,0 +1,33 @@
+name: Sub Checker CL30.py
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */3 * * *"   # اجرای cl.py هر ۲ ساعت
+
+permissions:
+  contents: write
+
+jobs:
+  cl30-job:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+      - run: pip install requests psutil retrying PyYaml || echo "skip install"
+      - run: |
+          rm -f final30.txt normal30.txt
+          timeout 180s python cl30.py || echo "❌ cl30.py failed or skipped"
+      - run: |
+          if [[ -s final30.txt || -s normal30.txt ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add final30.txt normal30.txt
+            git commit -m "auto update from cl30.py [skip ci]" || echo "No changes"
+            git push || echo "skip push"
+          else
+            echo "⚠️ final30.txt یا normal30.txt خالی یا موجود نیست، commit نشد"
+          fi
