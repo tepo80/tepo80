@@ -1,0 +1,40 @@
+name: CL90 Proxy Checker
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */1 * * *"  # هر یک ساعت اجرا شود
+
+permissions:
+  contents: write
+
+jobs:
+  cl90-job:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+
+      - name: Install dependencies
+        run: |
+          pip install requests PyYAML || echo "skip install"
+
+      - name: Run cl90.py
+        run: |
+          rm -f normal.yaml final.yaml
+          timeout 300s python cl90.py || echo "❌ cl90.py failed or skipped"
+
+      - name: Commit and push updated YAML
+        run: |
+          if [[ -f normal.yaml || -f final.yaml ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add normal.yaml final.yaml
+            git commit -m "Auto-update proxies [skip ci]" || echo "No changes to commit"
+            git push || echo "Push failed or skipped"
+          else
+            echo "⚠️ normal.yaml یا final.yaml موجود نیست، commit نشد"
