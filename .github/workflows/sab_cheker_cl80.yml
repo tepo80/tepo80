@@ -3,7 +3,7 @@ name: Sub Checker CL80
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 * * * *"   # اجرا هر ۱ ساعت
+    - cron: "0 */1 * * *"   # اجرا هر ۱ ساعت
 
 permissions:
   contents: write
